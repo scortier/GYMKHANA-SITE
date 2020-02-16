@@ -16,6 +16,43 @@
 <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
 
 <style>
+	/* Force scrollbars onto browser window */
+	body {
+	margin-bottom: 200%;
+	}
+	
+	/* Box styles */
+	.myBox {
+	border: none;
+	padding: 5px;
+	font: 20px/30px Roboto sans-serif;
+	font-style: italic;
+	width: 280px;
+	height: 240px;
+	overflow: scroll;
+	}
+	
+	/* Scrollbar styles */
+	::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+	}
+	
+	::-webkit-scrollbar-track {
+	background: #f5f5f5;
+	border-radius: 10px;
+	}
+	
+	::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #ccc;  
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+	background: #999;  
+	}
+	</style>
+<style>
 	html{
 	  scroll-behavior: smooth;
 	}
@@ -180,10 +217,10 @@
             <div class="card-wrapper" >
                 <div class="card" style="border-radius: 30px" >
                     <img src="image/tecnoesis.jpg" alt="card background" class="card-img">
-                    <img src="image/logoSingle.png" alt="profile image" class="profile-img"></a>
+                    <img src="image/logoSingle.png" alt="profile image" class="profile-img" style="border-style:groove;border-radius: 50%;background-color:#ebeef8;"></a>
                     <a href="http://www.tecnoesis.org/"target="_blank"><h1>Tecnoesis</h1></a>
 					<p class="job-title">A Saga of Intergelectic Ventures</p>
-					<p class="about">Tecnoesis is the annual techno-management fest of NIT Silchar. Tecnoesis has expanded its horizon to become one of India’s prominent Techno-management festivals. 
+					<p class="about myBox" style="text-align:inherit;">Tecnoesis is the annual techno-management fest of NIT Silchar. Tecnoesis has expanded its horizon to become one of India’s prominent Techno-management festivals. 
 
 
 						The theme for Tecnoesis this year is ‘Tecnoesis 2020: A Saga Of Intergalactic Ventures’.
@@ -198,10 +235,10 @@
 <!-----------------------INCANDESCENCE----------------->
                 <div class="card" style="border-radius: 30px;margin: 1%;" >
                     <img src="image/incand.png" alt="card background" class="card-img">
-                    <img src="image/i.png" alt="profile image" class="profile-img">
+                    <img src="image/i.png" alt="profile image" class="profile-img" style="border-style:solid;border-radius: 50%;border-color:cadetblue;">
                     <a href="https://incand.org/"target="_blank"><h1>Incandescence</h1></a>
 					<p class="job-title">A Royal Indian Carnival</p>
-					<p class="about">The cultural fest of NIT Silchar, also known as Incandescence, is a grand spectacle filled with joy and entertainment for one and all at NITS as well as for those outside the college. Incandescence stands apart for being one of the most vibrant, energetic and enthusiastic events in the Northeast. 
+					<p class="about myBox" style="text-align: inherit;">The cultural fest of NIT Silchar, also known as Incandescence, is a grand spectacle filled with joy and entertainment for one and all at NITS as well as for those outside the college. Incandescence stands apart for being one of the most vibrant, energetic and enthusiastic events in the Northeast. 
 
 
 						Being not merely a cultural festival, Incandescence today is a brand of nationwide repute which is built, graced and maintained by the presence of artists from across the country and participation from all across the nation.
@@ -219,10 +256,10 @@
 <!-----------------------POSUA----------------->
                 <div class="card" style="border-radius: 30px" >
                         <img src="image/posuaa.jpg" alt="card background" class="card-img">
-                        <img src="image/posua.png" alt="profile image" class="profile-img">
+                        <img src="image/posua.png" alt="profile image" class="profile-img" >
                         <h1>Posua</h1>
 						<p class="job-title">Spring Fiesta of NIT Silchar</p>
-						<p class="about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptate molestiae, ipsam hic at alias voluptates quos velit harum doloribus corporis quam similique repellendus tempora dolore quisquam, sit deleniti obcaecati?</p>
+						<p class="about myBox" style="text-align: inherit;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptate molestiae, ipsam hic at alias voluptates quos velit harum doloribus corporis quam similique repellendus tempora dolore quisquam, sit deleniti obcaecati?</p>
                         <ul class="social-media">
 							<li><a href="https://www.facebook.com/nitsposua" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
 							<li><a href="https://www.instagram.com/posuanitsilchar/"target="_blank"><i class="fa fa-instagram"></i></a></li>
@@ -232,10 +269,10 @@
  <!-----------------------Srijan----------------->
                 <div class="card" style="border-radius: 30px ;margin: 1%;" >
                         <img src="image/ecellbg.png" alt="card background" class="card-img">
-                        <img src="image/ecell.png" alt="profile image" class="profile-img">
+                        <img src="image/ecell.png" alt="profile image" class="profile-img" style="border-style:groove;border-radius: 50%;">
                         <h1>Srijan</h1>
 						<p class="job-title">E-SUMMIT</p>
-						<p class="about">“SRiJaN 1.0” is the first version of National Innovation and Entrepreneurship Summit organised by E Cell NIT Silchar. It is a unique initiative to motivate and educate people about entrepreneurship and to provide a meeting ground for Corporate experts and young budding entrepreneurs from NIT Silchar as well as several distinguished institutions across the country.
+						<p class="about myBox" style="text-align: inherit;">“SRiJaN 1.0” is the first version of National Innovation and Entrepreneurship Summit organised by E Cell NIT Silchar. It is a unique initiative to motivate and educate people about entrepreneurship and to provide a meeting ground for Corporate experts and young budding entrepreneurs from NIT Silchar as well as several distinguished institutions across the country.
 
 							(Organized by Institute Innovation Council & Start-up Centre, NIT SILCHAR jointly with IEDC NIT Silchar, E-Cell NIT Silchar)</p>
                         <ul class="social-media">
@@ -255,23 +292,13 @@
 
 	<!-- Footer -->
 
-	<footer class="footer">
+	<footer class="footer" style="">
 		<div class="container">
 			
-			<!-- Newsletter -->
-
-			<!--<div class="newsletter">
-				<div class="row">
-					<div class="col">-->
 						<div class="section_title text-center">
 							<h1></h1>
 						</div>
-				<!--	</div>
-				</div>
-
 				
-			</div>-->
-
 			<!-- Footer Content -->
 
 			<div class="footer_content">
@@ -283,62 +310,68 @@
 						<!-- Logo -->
 						<div class="logo_container">
 							<div class="logo">
-								<img src="image/GSUB1.png" alt="">
+								<img src="image/GSUB1.png" alt="" >
 								<span>GUB</span>
 							</div>
 						</div>
 						<ul>
-						<li class="footer_about_text"><strong>Individually,We are One Drop...<br>Together We are an Ocean...</strong></li>
+						<li class="footer_about_text"><strong style="font-size: 2.5vh;color: ghostwhite;"> Individually,<br> &nbsp; &nbsp; &nbsp; We are One Drop...<br>Together <br> &nbsp; &nbsp; &nbsp; We are an Ocean...</strong></li>
 					</ul>
 					</div>
 
 					<!-- Footer Column - Menu -->
 
 					<div class="col-lg-3 footer_col">
-						<div class="footer_column_title">NIT SILCHAR</div>
+						<div class="footer_column_title"><b>NITS</b></div>
 						<div class="footer_column_content">
 							<ul>
-								<li class="footer_list_item"><a href="#">Home</a></li>
-								<li class="footer_list_item"><a href="#">About Us</a></li>
-								<li class="footer_list_item"><a href="courses.html">Courses</a></li>
-								<li class="footer_list_item"><a href="news.html">News</a></li>
-								<li class="footer_list_item"><a href="contact.html">Contact</a></li>
+								<li class="footer_list_item"><a href="#"><b>Home</b></a></li>
+								<li class="footer_list_item"><a href="#"><b>Members</b></a></li>
+								<li class="footer_list_item"><a href="#"><b>Fest</b></a></li>
+								<li class="footer_list_item"><a href="#"><b>Societies</b></a></li>
+								<li class="footer_list_item"><a href="#"><b>Campus Life</b></a></li>
+								<li class="footer_list_item"><a href="#"></a></li>
 							</ul>
 						</div>
 					</div>
 
-					<!-- Footer Column - Useful Links -->
+					<!-- Footer Column - Usefull Links -->
 
 					<div class="col-lg-3 footer_col">
-						<div class="footer_column_title">Useful Links</div>
+						<div class="footer_column_title"><b>Useful Links</b></div>
 						<div class="footer_column_content">
 							<ul>
-								<li class="footer_list_item"><a href="http://www.nits.ac.in/">nits.ac.in</a></li>
-								<li class="footer_list_item"><a href="http://www.tecnoesis.org/?fbclid=IwAR2GxOEyD55Vil5cTnaK1n1ihCgVxeCgms4xGoK1eo8wqH8Q1eWZHZruhb4">tecnoesis.org</a></li>
-								<li class="footer_list_item"><a href="#">Incandescence</a></li>
-								<li class="footer_list_item"><a href="http://www.nits.ac.in/AIINIT/index.html">AIINIT</a></li>
-								
+								<li class="footer_list_item"><a href="http://www.nits.ac.in/"target="_blank" data-toggle="tooltip" data-placement="left" title="NIT Silchar Website"><b>nits.ac.in</b></a></li>
+								<li class="footer_list_item"><a href="http://www.tecnoesis.org/?fbclid=IwAR2GxOEyD55Vil5cTnaK1n1ihCgVxeCgms4xGoK1eo8wqH8Q1eWZHZruhb4"target="_blank"data-toggle="tooltip" data-placement="left" title="Tecnoesis"><b>tecnoesis.org</b></a></li>
+								<li class="footer_list_item"><a href="http://incand.org/"target="_blank" data-toggle="tooltip" data-placement="left" title="Incandescence"><b>http://incand.org</b></a></li>
+								<li class="footer_list_item"><a href="http://www.nits.ac.in/AIINIT/index.html" target="_blank" data-toggle="tooltip" data-placement="left" title="ALL INDIA INTER NIT"><b>AIINIT</b></a></li>
 							</ul>
+							<script>
+								$(document).ready(function(){
+								  $('[data-toggle="tooltip"]').tooltip();   
+								});
+							</script>
 						</div>
 					</div>
 
 					<!-- Footer Column - Contact -->
 
-					<div class="col-lg-3 footer_col">
-						<div class="footer_column_title">Contact Us</div>
+					<div class="col-lg-3 footer_col" id="contact">
+						<div class="footer_column_title"><b>Contact Us</b></div>
 						<div class="footer_column_content">
 							<ul>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
 										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
 									</div>
-									
+									<span>
 									<strong>Gymkhana Union Body
 									<br>
 											NIT Silchar,Silchar				<!---ISSSUUEEEEE---->
 									<br>
 											Assam-788010
 										</strong>
+									</span>
 								</li>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
@@ -349,8 +382,9 @@
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
 										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div><a href="gymkhanaunionbodynitsilchar@gmail.com">gymkhanaunionbodynitsilchar@gmail.com</a><br><a href="vp_gymkhana@nits.ac.in">vp_gymkhana@nits.ac.in</a>
-									<br><a href="gs_gymkhana@nits.ac.in">gs_gymkhana@nits.ac.in</a>
+									</div><a href="mailto://@gymkhanaunionbodynitsilchar@gmail.com">gymkhanaunionbodynitsilchar@gmail.com</a><br><a href="mailto://vp_gymkhana@nits.ac.in">vp_gymkhana@nits.ac.in</a>
+									<br><a href="mailto://gs_gymkhana@nits.ac.in">gs_gymkhana@nits.ac.in</a>
+
 								</li>
 							</ul>
 						</div>
@@ -364,16 +398,19 @@
 			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
 				<div class="footer_copyright">
 
-					<span><h4 >
+					<span><h5 style="color: ghostwhite;">
 
- &copy;<script>document.write(new Date().getFullYear());</script> GUB NIT SILCHAR</h4> <!-- <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
+ &copy;<script>document.write(new Date().getFullYear());</script> GUB NIT SILCHAR</h5> <!-- <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
 					</span>
 					<span>
 						<ul>
-							<li><h3><strong>Developers:-</strong></h3></li>
+							<li><h4 style="color: ghostwhite;"><strong>Developers:-</strong></h4></li>
 							
-							<li class="menu_social_item"><a href="https://www.linkedin.com/in/aditya-singh-sisodiya-scortier/">Aditya Singh Sisodiya</a>  </li>
-							<li class="menu_social_item"><a href="https://www.linkedin.com/in/nabanita-bania-27b141169/">Nabanita Bania<!--<i class="fab fa-linkedin-in">  </i>--></a></li>
+							<li class="menu_social_item"><a href="https://www.linkedin.com/in/aditya-singh-sisodiya-scortier/"target="_blank">Aditya Singh Sisodiya</a>  
+							</li>
+							
+							<li class="menu_social_item"target="_blank"><a href="https://www.linkedin.com/in/nabanita-bania-27b141169/" target="_blank">Nabanita Bania</a>
+							</li>
 							
 						</ul>
 						
@@ -382,9 +419,7 @@
 				<div class="footer_social ml-sm-auto">
 					<ul class="menu_social">
 						
-						
-						
-						<li class="menu_social_item"><a href="https://www.facebook.com/GymkhanaUnionBodyNitSilchar"><img src="image/fbb.png"></a></li>
+						<li class="menu_social_item"><a href="https://www.facebook.com/GymkhanaUnionBodyNitSilchar" target="_blank"><img src="image/fbb.png" height="75px" width="75px"></a></li>
 						
 					</ul>
 				</div>
@@ -392,6 +427,7 @@
 
 		</div>
 	</footer>
+
 
 
 </div>
