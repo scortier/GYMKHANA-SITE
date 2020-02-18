@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-    $("#so-cult").hide();
+    $("#cultural").hide();
     $("#technology").hide();
      
 
     $("#div1").click(function(){
-        $("#so-cult").hide();
+        $("#cultural").hide();
        $("#technology").hide();
         $("#sports").show();
        
@@ -14,14 +14,14 @@ $(document).ready(function(){
     $("#div2").click(function(){
         $("#technology").hide();
         $("#sports").hide();
-       $("#so-cult").show();
+       $("#cultural").show();
       
     });
 
     $("#div3").click(function(){
         $("#technology").show();
         $("#sports").hide();
-       $("#so-cult").hide();
+       $("#cultural").hide();
        
     });
 

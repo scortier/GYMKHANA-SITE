@@ -114,12 +114,7 @@
 }
 
 /******************************
-
 COLOR PALETTE
-
-
-
-
 [Table of Contents]
 0. About
 1. Fonts
@@ -149,8 +144,6 @@ COLOR PALETTE
 	15.1 Newsletter
 	15.2 Footer Content
 	15.3 Footer Copyright
-
-
 ******************************/
 /***********
 0. About
@@ -382,6 +375,7 @@ section {
   padding: 0px !important;
 }
 
+
 /*********************************
 3. Header
 *********************************/
@@ -491,13 +485,13 @@ section {
 
   font-size: 30px;
   font-weight: 900;
-  background: linear-gradient(-45deg, #304352, #d7d2cc);
+  background: #ffb606;  
 }
 .header_side img {
   width: 110px;
   height: 110px;
 }
-.header_side span {
+.header_side span a{
   display: block;
   position: relative;
   font-family: "Open Sans", sans-serif;
@@ -712,7 +706,6 @@ section {
   transform: translateY(0px);
   opacity: 1;
 }
-
 /*********************************
 5. Home
 *********************************/

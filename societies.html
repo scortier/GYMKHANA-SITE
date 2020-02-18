@@ -1,472 +1,720 @@
-<html>
-    <head>
-        <title>Socities</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Course Project">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-        <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-        <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-        <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-        <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="styles/societies.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gymkhana Socities</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" href="styles/societies.css">
         <link rel="stylesheet" type="text/css" href="styles/societies_responsive.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
-        <style>
-            html{
-              scroll-behavior: smooth;
-            }
-            body{
-            
-              margin: 0;
-              padding: 0;
-            }
-            section{
-              width: 100%;
-              height: 300vh;
-              
-              
-            }
-            .gotopbtn{
-              position: fixed;
-              border-radius: 50%;
-              width: 50px;
-              height: 50px;
-              background: rgb(170, 165, 165);
-              bottom: 40px;
-              right: 50px;
-            
-              text-decoration: none;
-              text-align: center;
-              line-height: 50px;
-              color: white;
-              font-size: 22px;
-            }
-            
-            
-            </style>
-    </head>
-    <body>
+</head>
+<body>
 
+<div class="super_container">
 
-        <div class="super_container">
-                
-                <!-- Header -->
+		<!-- Header -->
 
-            <header class="header d-flex flex-row">
-                <div class="header_content d-flex flex-row align-items-center">
-                    <!-- Logo -->
-                    <div class="logo_container">
-                        <div class="logo"><a href="index.html"><img src="image/2GSUB.png" alt=""></a>
-                            <span>GUB</span>
-                        </div>
+        <header class="header d-flex flex-row">
+            <div class="header_content d-flex flex-row align-items-center">
+                <!-- Logo -->
+                <div class="logo_container">
+                    <div class="logo">
+                        <img src="image/2GSUB.png" alt="">
+                        <span>GUB</span>
                     </div>
-
-                    <!-- Main Navigation -->
-                    <nav class="main_nav_container">
-                        <div class="main_nav">
-                            <ul class="main_nav_list">
-                                <li class="main_nav_item"><a href="index.html">home</a></li>
-                                <li class="main_nav_item">
-                                    <div class="dropdown">
-                                    <button class="dropbtn"><a href="Members.html">Members</a></button>
-                                    <div class="dropdown-content">
-                                        <a href="Members.html">2019-20</a>
-                                        <a href="oldmembers.html">2018-19</a>
-                                        <a href="oldmembers2.html">2017-18</a>
-                                        <a href="oldmembers.html">2016-17</a>
-
-                                    </div>
-                                    </div>
-                                </li>
-                                <li class="main_nav_item"><a href="FEST.html">Fests</a></li>
-                                <li class="main_nav_item"><a href="societies.html">Societies</a></li>
-                                <li class="main_nav_item"><a href="news.html">Campus Life</a></li>
-                                <li class="main_nav_item"><a href="contact.html">Inter NIT</a></li>						
-                                <li class="main_nav_item"><a href="contact.html">Contacts</a></li>
-
-
-                            </ul>
-                        </div>
-                    </nav>
                 </div>
-
-                <div class="header_side d-flex flex-row justify-content-center align-items-center">
-                    <a href="http://www.nits.ac.in/"><img id="image" src="image/nn.png" alt=""></a>
-                    <span><strong>NITS</strong></span>
-                </div>
-
-                <!-- Hamburger -->
-                <div class="hamburger_container">
-                    <i class="fas fa-bars trans_200"></i>
-                </div>
-
-            </header>
-            
-            <!-- Menu -->
-            <div class="menu_container menu_mm">
-
-                <!-- Menu Close Button -->
-                <div class="menu_close_container">
-                    <div class="menu_close"></div>
-                </div>
-
-                <!-- Menu Items -->
-                <div class="menu_inner menu_mm">
-                    <div class="menu menu_mm">
+    
+                <!-- Main Navigation -->
+                <nav class="main_nav_container">
+                    <div class="main_nav">
                         <ul class="main_nav_list">
                             <li class="main_nav_item"><a href="index.html">home</a></li>
                             <li class="main_nav_item">
                                 <div class="dropdown">
-                                <button class="dropbtn"><a href="Members.html">Members</a></button>
-                                <div class="dropdown-content">
-                                    <a href="Members.html">2019-20</a>
+                                  <button class="dropbtn"><a href="members.html">Members</a></button>
+                                  <div class="dropdown-content">
+                                    <a href="members.html">2019-20</a>
                                     <a href="oldmembers.html">2018-19</a>
                                     <a href="oldmembers2.html">2017-18</a>
-                                    <a href="oldmembers.html">2016-17</a>
-
-                                </div>
+                                    <a href="oldmembers3.html">2016-17</a>
+    
+                                  </div>
                                 </div>
                             </li>
                             <li class="main_nav_item"><a href="FEST.html">Fests</a></li>
                             <li class="main_nav_item"><a href="societies.html">Societies</a></li>
-                            <li class="main_nav_item"><a href="news.html">Campus Life</a></li>
-                            <li class="main_nav_item"><a href="contact.html">Inter NIT</a></li>						
-                            <li class="main_nav_item"><a href="contact.html">Contacts</a></li>
-
-
+                            <li class="main_nav_item"><a href="Campus Life.html">Campus Life</a></li>
+                            <li class="main_nav_item"><a href="activities.html">Activities</a></li>						
+                            <li class="main_nav_item"><a href="#contact">Contacts</a></li>
+    
+    
                         </ul>
-
-                        <!-- Menu Social -->
-                        
-                        <div class="menu_social_container menu_mm">
-                            <ul class="menu_social menu_mm">
-                                <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            </ul>
-                        </div>
-
-                    </div>	
-                </div>
-
+                    </div>
+                </nav>
             </div>
-
-                <h1 class="heading">Clubs Under Gymkhana Union Body</h1>
-
-
-               
-                <div class="box">
-                    <div class="rows">
-                        <div class="columns">
-                            <div class="card middle">
-                                <div class="front">
-                                    <img src="images/drama.png" alt="">
-                                </div>
-                                <div class="back">
-                                    <div class="back-content middle">
-                                        <h2>Dramatics Club</h2>
-                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                        <div class="sm">
-                                            <a href="https://www.facebook.com/advay.nitsilchar/"><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="card middle">
-                                <div class="front">
-                                    <img src="images/literary.jpg" alt="">
-                                </div>
-                                <div class="back">
-                                    <div class="back-content middle">
-                                        <h2>Literary Club</h2>
-                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                        <div class="sm">
-                                            <a href="https://www.facebook.com/Illuminits/"><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="card middle">
-                                <div class="front">
-                                    <img src="images/photography.jpg" alt="">
-                                </div>
-                                <div class="back">
-                                    <div class="back-content middle">
-                                        <h2>Photography Club</h2>
-                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                        <div class="sm">
-                                            <a href="https://www.facebook.com/PhotographyClub.NITS/"><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="rows">
-                        <div class="columns">
-                                <div class="card middle">
-                                    <div class="front">
-                                        <img src="images/robotics.png" alt="">
-                                    </div>
-                                    <div class="back">
-                                        <div class="back-content middle">
-                                            <h2>Robotics Club</h2>
-                                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                            <div class="sm">
-                                                <a href="https://www.facebook.com/roboticsclub.nits/"><i class="fab fa-facebook-f"></i></a>
-                                                <a href=""><i class="fab fa-instagram"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="columns">
-                            <div class="card middle">
-                                <div class="front">
-                                    <img src="images/dance.jpg" alt="">
-                                </div>
-                                <div class="back">
-                                    <div class="back-content middle">
-                                        <h2>Dance Club</h2>
-                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                        <div class="sm">
-                                            <a href="https://www.facebook.com/danceclub.nits/"><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="card middle">
-                                <div class="front">
-                                    <img src="images/music.jpg" alt="">
-                                </div>
-                                <div class="back">
-                                    <div class="back-content middle">
-                                        <h2>Music Club</h2>
-                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                        <div class="sm">
-                                            <a href="https://www.facebook.com/musicclubnitsilchar/"><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="rows">
-                        <div class="columns">
-                            <div class="card middle">
-                                <div class="front">
-                                    <img src="images/chessclub.jpg" alt="">
-                                </div>
-                                <div class="back">
-                                    <div class="back-content middle">
-                                        <h2>Chess Club</h2>
-                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                        <div class="sm">
-                                            <a href="https://www.chess.com/club/nit-silchar-chess-club"><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="card middle">
-                                <div class="front">
-                                    <img src="images/dummy.webp" alt="">
-                                </div>
-                                <div class="back">
-                                    <div class="back-content middle">
-                                        <h2>Mountaineering Club</h2>
-                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                        <div class="sm">
-                                            <a href="https://www.facebook.com/groups/nits.mountaineeringclub/"><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="card middle">
-                                <div class="front">
-                                    <img src="images/eco.jpg" alt="">
-                                </div>
-                                <div class="back">
-                                    <div class="back-content middle">
-                                        <h2>Eco Club</h2>
-                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Contrary to popular belief, Lorem Ipsum is not simply random text</span>
-                                        <div class="sm">
-                                            <a href="https://www.facebook.com/ecoclub.nitsilchar"><i class="fab fa-facebook-f"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-
-
+    
+            <div class="header_side d-flex flex-row justify-content-center align-items-center">
+                <img src="image/nn.png" alt="">
+                <span ><a href="http://www.nits.ac.in/"target="_blank"> NITS</a> </span>
+            </div>
             
-            <footer class="footer">
-                <div class="container">
+    
+            <!-- Hamburger -->
+            <div class="hamburger_container">
+                <i class="fas fa-bars trans_200"></i>
+            </div>
+    
+        </header>
+        
+        <!-- Menu -->
+        <div class="menu_container menu_mm">
+    
+            <!-- Menu Close Button -->
+            <div class="menu_close_container">
+                <div class="menu_close"></div>
+            </div>
+    
+            <!-- Menu Items -->
+            <div class="menu_inner menu_mm">
+                <div class="menu menu_mm">
+                    <ul class="menu_list menu_mm">
+                        <li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+                        <!------------------------------------------------------------ISE KOI THIK KARO--------->
+                        
+                        <li class="menu_item menu_mm">
+                            <div class="dropdown">
+                                  <button class="dropbtn"><a href="members.html">Members</a></button>
+                                  <div class="dropdown-content">
+                                    <a href="members.html">2019-20</a>
+                                    <a href="oldmembers.html">2018-19</a>
+                                    <a href="oldmembers2.html">2017-18</a>
+                                    <a href="oldmembers3.html">2016-17</a>
+    
+                                  </div>
+                                </div>
+                        </li>		
+    <!-------------------------------------------------------------------------------------------------------->
+                        <li class="menu_item menu_mm"><a href="FEST.html">Fests</a></li>
+                        <li class="menu_item menu_mm"><a href="societies.html">Societies</a></li>
+                        <li class="menu_item menu_mm"><a href="Campus Life.html">Campus Life</a></li>
+                        <li class="menu_item menu_mm"><a href="activities.html">Activities</a></li>
+                        <li class="menu_item menu_mm"><a href="#contact">Contact</a></li>
+                    </ul>
+    
+                    <!-- Menu Social -->
                     
-                    <!-- Footer Content -->
+                    <div class="menu_social_container menu_mm">
+                        <ul class="menu_social menu_mm">
+                
+                            <li class="menu_social_item menu_mm"><a href="#"><img src="image/fbb.png"></a></li>
+                            
+                        </ul>
+                    </div>
+    
+                    <div class="menu_copyright menu_mm"> All rights reserved</div>
+                </div>
+    
+            </div>
+    
+        </div>
+	
+	<!-- Home -->
 
-                    <div class="footer_content">
-                        <div class="row">
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(image/society.jpeg)"></div>
+		</div>
+		<div class="home_content">
+			<h1>Societies Under Gymkhana</h1>
+        </div>
 
-                            <!-- Footer Column - About -->
-                            <div class="col-lg-3 footer_col">
+		<div class="container">
+			<div class="row">
+				<div class="col col-12 col-lg-4">
+					<div class="tags" id="div1">
+						<a href="#sports"><h2>SPORTS</h2></a>
+					</div>
+				</div>
+				<div class="col col-12 col-lg-4">
+					<div class="tags" id="div2">
+						<a href="#so-cult"><h2>SO-CULT</h2></a>
+					</div>
+				</div>
+				<div class="col col-12 col-lg-4">
+					<div class="tags" id="div3">
+						<a href="#technology"><h2>TECHNOLOGY</h2></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-                                <!-- Logo -->
-                                <div class="logo_container">
-                                    <div class="logo">
-                                        <img src="GSUB1.png" alt="">
-                                        <span>GUB</span>
+	<!-- Contact -->
+    
+    <div id="sports">
+        <h1>Sports Club Under GUB</h1>
+        <div class="box">
+            <div class="rows">
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/football.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Football Hub</h2>
+                                <span>Football is undoubtedly one of the most popular sports. The Football Hub of NIT Silchar is the place for football enthusiasts to meet and share and explore their common interest. The hub organizes numerous intra college football events to work on their football skills.</span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/groups/971151156337194/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/cricket.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Cricket Club</h2>
+                                <span>NITS Cricket Club, of which the official cricket team representing NIT Silchar is a subset of, comprises of young and budding sports enthusiasts and individuals who together have brought several glories to the Institute. Each year this team participates in some major National Level Tournaments organised in various NITs and IITs. The team focuses mainly on promoting sportsmanship and love among this beautiful family.</span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/groups/1535896413231765/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/basketball.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Basketball, Handball And Volleyball</h2>
+                                <span>The Basketball, Handball and Volleyball Club is responsible for training the interested students in these sports and has also secured positions in a number of inter college events.<div class="sm">
+                                    <a href="https://www.facebook.com/PhotographyClub.NITS/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="rows">
+                <div class="columns">
+                        <div class="card middle">
+                            <div class="front">
+                                <img src="images/mountain.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <div class="back-content middle">
+                                    <h2>Trekking, Mountaineering, Skating, and Karate</h2>
+                                    <span>The pleasure of exploration is one of the very few aesthetic pleasures of life. The trekking, mountaineering, skating and karate club is the home to.the exploration freaks of NIT Silchar. The members have secured accolades in numerous events and have travelled to and conquered numerous peaks in the North East and even other parts of India.</span>
+                                        <div class="sm">
+                                        <a href="https://www.facebook.com/groups/nits.mountaineeringclub/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
-                                <ul>
-                                <li class="footer_about_text"><strong>Individually,We Are One Drop...<br>Together We Are an Ocean...</strong></li>
-                            </ul>
                             </div>
-
-                            <!-- Footer Column - NIT SILCHAR -->
-
-                            <div class="col-lg-3 footer_col">
-                                <div class="footer_column_title">NITS</div>
-                                <div class="footer_column_content">
-                                    <ul>
-                                        <li class="footer_list_item"><a href="#">Home</a></li>
-                                        <li class="footer_list_item"><a href="#">About Us</a></li>
-                                        <li class="footer_list_item"><a href="courses.html">Courses</a></li>
-                                        <li class="footer_list_item"><a href="news.html">News</a></li>
-                                        <li class="footer_list_item"><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Footer Column - Usefull Links -->
-
-                            <div class="col-lg-3 footer_col">
-                                <div class="footer_column_title">Useful Links</div>
-                                <div class="footer_column_content">
-                                    <ul>
-                                        <li class="footer_list_item"><a href="http://www.nits.ac.in/">nits.ac.in</a></li>
-                                        <li class="footer_list_item"><a href="http://www.tecnoesis.org/?fbclid=IwAR2GxOEyD55Vil5cTnaK1n1ihCgVxeCgms4xGoK1eo8wqH8Q1eWZHZruhb4">tecnoesis.org</a></li>
-                                        <li class="footer_list_item"><a href="#">Incandescence</a></li>
-                                        <li class="footer_list_item"><a href="http://www.nits.ac.in/AIINIT/index.html">AIINIT</a></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Footer Column - Contact -->
-
-                            <div class="col-lg-3 footer_col">
-                                <div class="footer_column_title">Contact Us</div>
-                                <div class="footer_column_content">
-                                    <ul>
-                                        <li class="footer_contact_item">
-                                            <div class="footer_contact_icon">
-                                                <img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
-                                            </div>
-                                            
-                                            <strong>Gymkhana Student's Union Body
-                                            <br>
-                                                    NIT Silchar,Silchar				<!---ISSSUUEEEEE---->
-                                            <br>
-                                                    Assam-788010
-                                                </strong>
-                                        </li>
-                                        <li class="footer_contact_item">
-                                            <div class="footer_contact_icon">
-                                                <img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
-                                            </div>
-                                            +91-87892 86708
-                                        </li>
-                                        <li class="footer_contact_item">
-                                            <div class="footer_contact_icon">
-                                                <img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
-                                            </div><a href="gymkhanaunionbodynitsilchar@gmail.com">gymkhanaunionbodynitsilchar@gmail.com</a><br><a href="vp_gymkhana@nits.ac.in">vp_gymkhana@nits.ac.in</a>
-                                            <br><a href="gs_gymkhana@nits.ac.in">gs_gymkhana@nits.ac.in</a>
-                                            
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
                         </div>
-                    </div>
-
-                    <!-- Footer -->
-
-                    <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
-                        <div class="footer_copyright">
-
-                            <span>
-
-        &copy;<script>document.write(new Date().getFullYear());</script> GUB NIT SILCHAR<!-- <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
-                            </span>
-                            <span>
-                                <ul>
-                                    <li>Developers:-</li>
-                                    
-                                    <li class="menu_social_item"><a href="https://www.linkedin.com/in/aditya-singh-sisodiya-scortier/">Aditya Singh Sisodiya</a>  </li>
-                                    <li class="menu_social_item"><a href="https://www.linkedin.com/in/nabanita-bania-27b141169/">Nabanita Bania<!--<i class="fab fa-linkedin-in">  </i>--></a></li>
-                                    
-                                </ul>
-                                
-                            </span>
-                        </div>
-                        <div class="footer_social ml-sm-auto">
-                            <ul class="menu_social">
-                                
-                                
-                                <li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li class="menu_social_item"><a href="https://www.facebook.com/GymkhanaUnionBodyNitSilchar"><i class="fab fa-facebook-f"></i></a></li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
-            </footer>
-        </div> 
-        
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/gym.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Athletics and Gymnasium Club
+                                </h2>
+                                <span>Home to the fitness freaks and body builders, the Athletics and Gymnasium club is in control of the institute gym  and is one of the best in the nation with the members securing numerous accolades for the institution in various competitions. </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/danceclub.nits/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/tennis.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Tennis Club</h2>
+                                <span>Tennis Club is the home to the lawn tennis enthusiasts of NIT Silchar. The tennis court in the campus is the training ground for the students where they may train themselves in the sport, or maybe just have a friendly match mostly for stress relief. </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/groups/tennisclub.nits/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="styles/bootstrap4/popper.js"></script>
-        <script src="styles/bootstrap4/bootstrap.min.js"></script>
-        <script src="plugins/greensock/TweenMax.min.js"></script>
-        <script src="plugins/greensock/TimelineMax.min.js"></script>
-        <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-        <script src="plugins/greensock/animation.gsap.min.js"></script>
-        <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-        <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-        <script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
-        <script src="plugins/easing/easing.js"></script>
-        <script src="js/custom.js"></script>
-       
-    </body>
+        <div class="box">
+            <div class="rows">
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/kabaddi.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Kabaddi and Kho Kho</h2>
+                                <span>All sports are encouraged in our institution. The Kabaddi and Kho Kho club is the home to the enthusiasts of these ancient Indian sports and have represented the institution at numerous inter NIT competitions.</span>
+                                    <div class="sm">
+                                    <a href="https://www.facebook.com/groups/1924214091197681/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <div id="cultural">
+        <h1>Cultural Club Under GUB</h1>
+        <div class="box">
+            <div class="rows">
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/drama.png" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Advay: Dramatics Club</h2>
+                                <span>"There are more things on Heaven and Earth, Horatio; than are dreamt of in your philosophy."
+
+                                    What is life without a little drama? Advay is the place for you if you express yourself with your expressions. Let the spark within you run wild, and set the stage on fire. Advay trains the students in the field of dramatics and teaches them to harness their emotions and express them in front of the spotlight.
+                                    </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/advay.nitsilchar/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/literary.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Illuminits: Literary, Publications And Fine Arts Society</h2>
+                                <span>Illuminits provides a relaxing and interactive environment while giving the students a platform to hone their fine arts and literary skills both in national and vernacular languages. Every year, Illuminits grooms individuals and helps them overcome their fear of literary feats, boosting up their confidence be it speaking skills, creative writing, journalism, quizzing, design or arts so they may leave the college as professional and trained individuals that the corporate world demands.
+                                </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/Illuminits/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/photography.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Obiettivo: Photography Club, NIT Silchar</h2>
+                                <span>With a page reach of almost 13,000, Obiettivo is one of the most successful clubs amongst the NITs. Obiettivo is responsible for capturing all the important moments in the institution. From the fresher’s party to farewell, Obiettivo has it all covered. Obiettivo has been the home to both globally and nationally recognized photographers.</span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/PhotographyClub.NITS/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="rows">
+                <div class="columns">
+                        <div class="card middle">
+                            <div class="front">
+                                <img src="images/gyansagar.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <div class="back-content middle">
+                                    <h2>Gyansagar</h2>
+                                    <span>"And somewhere there are engineers
+                                        Helping others fly faster than sound.
+                                        But, where are the engineers
+                                        Helping those who must live on the ground?"
+                                        Young Oxfam Poster
+                                        
+                                        With all the technical and nontechnical clubs and societies meant solely for the students of the institution, Gyansagar is in turn an initiative of the students of the institution to give back to the society. We at NIT Silchar believe that every small step matters. Gyansagar carries out donation drives and provides free education facilities to the needy inside and around the campus.
+                                    </span>
+                                        <div class="sm">
+                                        <a href="https://www.facebook.com/Gyansagar.NITS/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/dance.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Dance Club</h2>
+                                <span>NSD or NIT Silchar Dance Club club is one of the most prominent clubs of NIT Silchar with over 50 dancers associated with it and numerous other dance enthusiasts. The main event falling under NSD are Flashmob, the promotional event of Incandescence and the representation of NIT Silchar in Springfest IIT Kharagpur. Every year the club nurtures people who participate in the Dance Workshop for all alike.
+                                    Apart from this NSD began the culture of Let's Nacho and Talent Hunt to make people leave their comfort zones with ease.
+                                    </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/danceclub.nits/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/music.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Music Club</h2>
+                                <span>NIT Silchar is a place where talents of all kinds are appreciated. Where our academics demand us to be precise as engineers, the music club of NIT SIlchar is where you can let your imagination run free. For the musicians, the music club organizes regular training and jamming sessions to shape the students into better musicians.
+                                </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/musicclubnitsilchar/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="rows">
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/eco.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Eco Club</h2>
+                                <span>With half the world burning and the other half drowning, it is high time to the concrete steps to counter this calamity. The Eco Club of NIT Silchar strives to create awareness  about global issues and organizes numerous plantation and cleanliness drives throughout the year.
+                                </span>
+                                    <div class="sm">
+                                    <a href="https://www.facebook.com/ecoclub.nitsilchar"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div id="technology">
+        <h1>Technical Club Under GUB</h1>
+        <div class="box">
+            <div class="rows">
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/robotics.png" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>
+                                    N.E.R.D.S. - NIT Silchar Embedded and Robotics Development Society
+                                    </h2>
+                                <span>With the exponential growth in the influence of robots in corporate and industrial worlds, NIT Silchar is also on its way to leave its footprint on the innovator community. N.E.R.D.S trains the students in the domain of robotics and embedded systems and making them into the world class innovators of tomorrow.</span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/advay.nitsilchar/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/coding.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Coding Club</h2>
+                                <span>Almost everything today runs on code. Coding is one of the most essential skills for an engineer. With the same outlook in mind, coding club strives to teach the students to code. It trains students in the commonest languages from beginner to advanced levels. NIT Silchar proudly flaunts some of the best coders in the nation.  </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/groups/CodingClub.NITSilchar/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/machine.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Machine Learning Club</h2>
+                                <span>Artificial Intelligence is no longer something only limited to the cinematic universe. With every passing day, it is developing, that too rapidly. The Machine Learning Club of NIT Silchar aspires to keep up with this trend and teach the students the basics of this evolving technology.
+                                </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/groups/544333122662944/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="rows">
+                <div class="columns">
+                        <div class="card middle">
+                            <div class="front">
+                                <img src="images/dsc.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <div class="back-content middle">
+                                    <h2>Developer Student Club</h2>
+                                    <span>Every big innovation starts with an idea. The Developer Student Club of NIT Silchar helps you with the execution of your ideas. Inspiring and coaching the next generation of Musks and Zuckerbergs, the Developer Student Club is the place for you if you have the urge to leave your footprint on the web
+                                    </span>    
+                                    <div class="sm">
+                                        <a href="https://www.facebook.com/dscgnit/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/dance.jpg" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>Automobile Club</h2>
+                                <span>The automobile club is composed of individuals brought together by their passion for automobiles. The club takes part in various competitions and is in charge of the development of T.W.R.A.N. After the successful completion of the first iteration of TWRAN, the team is all geared up for the second iteration.</span>
+                                    <div class="sm">
+                                    <a href="https://www.facebook.com/danceclub.nits/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="card middle">
+                        <div class="front">
+                            <img src="images/e-cell.png" alt="">
+                        </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h2>E-Cell</h2>
+                                <span>The capacity and willingness to develop, organize and manage a business venture along with any of its risks in order to make a profit is what distinguishes businessman from 
+                                    an entrepreneur. E-Cell, NIT Silchar or Entrepreneurship Cell of National Institute of 
+                                    Technology, Silchar is a non-profit organization run by the students of NIT Silchar 
+                                    established with the aim to promote entrepreneurship and start-ups within the 
+                                    college. In a world where every man is a company himself by the virtue of his ideas, we 
+                                    thrive to develop the attitude of self-dependency among our college students. Keeping an aim of fostering nurturing the spirit of entrepreneurship in the youth of NIT Silchar, 
+                                    we at E-Cell, NIT Silchar have conceptualized & successfully implemented various initiatives  to help students, young entrepreneurs & professionals in their entrepreneurial journey. </span>
+                                <div class="sm">
+                                    <a href="https://www.facebook.com/ecell.nit.silchar/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+
+					<!-- Footer Column - About -->
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<img src="GSUB1.png" alt="">
+								<span>GUB</span>
+							</div>
+						</div>
+						<ul>
+						<li class="footer_about_text"><strong>Individually,We Are One Drop...<br>Together We Are an Ocean...</strong></li>
+					</ul>
+					</div>
+
+					<!-- Footer Column - NIT SILCHAR -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">NITS</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="#">Home</a></li>
+								<li class="footer_list_item"><a href="#">About Us</a></li>
+								<li class="footer_list_item"><a href="courses.html">Courses</a></li>
+								<li class="footer_list_item"><a href="news.html">News</a></li>
+								<li class="footer_list_item"><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Useful Links</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="http://www.nits.ac.in/">nits.ac.in</a></li>
+								<li class="footer_list_item"><a href="http://www.tecnoesis.org/?fbclid=IwAR2GxOEyD55Vil5cTnaK1n1ihCgVxeCgms4xGoK1eo8wqH8Q1eWZHZruhb4">tecnoesis.org</a></li>
+								<li class="footer_list_item"><a href="#">Incandescence</a></li>
+								<li class="footer_list_item"><a href="http://www.nits.ac.in/AIINIT/index.html">AIINIT</a></li>
+								
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact Us</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									
+									<strong>Gymkhana Student's Union Body
+									<br>
+											NIT Silchar,Silchar				<!---ISSSUUEEEEE---->
+									<br>
+											Assam-788010
+										</strong>
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									+91-87892 86708
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div><a href="gymkhanaunionbodynitsilchar@gmail.com">gymkhanaunionbodynitsilchar@gmail.com</a><br><a href="vp_gymkhana@nits.ac.in">vp_gymkhana@nits.ac.in</a>
+									<br><a href="gs_gymkhana@nits.ac.in">gs_gymkhana@nits.ac.in</a>
+									
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+
+					<span>
+
+ &copy;<script>document.write(new Date().getFullYear());</script> GUB NIT SILCHAR<!-- <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
+					</span>
+					<span>
+						<ul>
+							<li>Developers:-</li>
+							
+							<li class="menu_social_item"><a href="https://www.linkedin.com/in/aditya-singh-sisodiya-scortier/">Aditya Singh Sisodiya</a>  </li>
+							<li class="menu_social_item"><a href="https://www.linkedin.com/in/nabanita-bania-27b141169/">Nabanita Bania<!--<i class="fab fa-linkedin-in">  </i>--></a></li>
+							
+						</ul>
+						
+					</span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						
+						
+						<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="https://www.facebook.com/GymkhanaUnionBodyNitSilchar"><i class="fab fa-facebook-f"></i></a></li>
+						
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/activities.js"></script>
+</body>
 </html>
