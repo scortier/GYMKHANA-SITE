@@ -405,7 +405,7 @@ section {
   
 	font-size: 30px;
 	font-weight: 900;
-	background: #ffb606;  
+	background:linear-gradient(-145deg ,white, #ffb606 );  
   }
   .header_side img {
 	width: 110px;
