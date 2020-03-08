@@ -375,7 +375,6 @@ section {
   padding: 0px !important;
 }
 
-
 /*********************************
 3. Header
 *********************************/
@@ -485,13 +484,13 @@ section {
 
   font-size: 30px;
   font-weight: 900;
-  background: #ffb606;  
+  background: #ffb606;
 }
 .header_side img {
   width: 110px;
   height: 110px;
 }
-.header_side span a{
+.header_side span a {
   display: block;
   position: relative;
   font-family: "Open Sans", sans-serif;
@@ -1204,7 +1203,7 @@ input:last-of-type {
   margin-bottom: 18px;
 }
 .event_day {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 700;
   color: black;
   font-family: adobe garamond pro bold;
