@@ -114,7 +114,7 @@ COLOR PALETTE
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 body {
-	background: url(../image/background.png);
+	background: url(../image/background.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
@@ -702,13 +702,13 @@ section {
   .page_section {
 	padding-top: 117px;
 	padding-bottom: 117px;
-	background: url(../image/background.png);
+	background: url(../image/background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%
   }
   section {
-	background: url(../image/background.png);
+	background: url(../image/background.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%
