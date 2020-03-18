@@ -287,14 +287,15 @@
 	}
 	.home_content
 	{
-		padding-top: 17px;
+		padding-top: 20px;
 	    padding-bottom: 11px;
 	    padding-left: 22px;
-	    padding-right: 24px;
+		padding-right: 24px;
+		bottom: 258px;
 	}
 	.home_content h1
 	{
-		font-size: 30px;
+		font-size: 23px;
 	}
 	.card-title
 	{

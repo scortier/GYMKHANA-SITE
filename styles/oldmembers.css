@@ -324,114 +324,16 @@ section
 /*********************************
 3. Header
 *********************************/
-
-.header {
-	position: fixed;
-	top: 45px;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	width: 1318px;
-	height: 104px;
-	background: #ffffff;
-	z-index: 10;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-  }
-  .header.scrolled {
-	top: 15px;
-  }
-  .header.scrolled .header_content::before {
-	box-shadow: 0px 20px 49px rgba(0, 0, 0, 0.17);
-  }
-  .header_content {
-	width: calc(100% - 150px); /*TO CHANGE SIZE OF HEADER */
-	height: 100%;
-  }
-  .header_content::before {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	content: "";
-	box-shadow: 0px 20px 49px rgba(0, 0, 0, 0.67);
-	z-index: -1;
-  }
-  
-  /*********************************
-  3.1 Logo
-  *********************************/
-  
-  .logo_container {
-	display: inline-block;
-	padding-left: 10px;
-  }
-  .logo span {
-	font-family: "Open Sans", sans-serif;
-	font-size: 30px;
-	font-weight: 900;
-	color: #3a3a3a;
-	vertical-align: middle;
-	text-transform: uppercase;
-	margin-left: 3px;
-  }
-  
-  /*********************************
-  3.2 Main Nav
-  *********************************/
-  
-  .main_nav_container {
-	display: inline-block;
-	margin-left: auto;
-	padding-right: 90px; /**********right part se distance *******************/
-  }
-  .main_nav {
-	margin-top: 7px;
-  }
-  .main_nav_item {
-	display: inline-block;
-	margin-right: 35px; /***************distance bw two tags *****************/
-  }
-  .main_nav_item:last-child {
-	margin-right: 0px;
-  }
-  .main_nav_item a {
-	font-family: "Open Sans", sans-serif;
-	font-size: 14px; /***************TAGS FONT SIZE*************/
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #3a3a3a;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-  }
-  .main_nav_item a:hover {
-	color: #ffb606; /************HOVER COLOR *********************/
-  }
-  
-  /*********************************
-  3.3 Header Side
-  *********************************/
-  @import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
 .body{
 	font-family: 'Gothic A1', sans-serif;
 	font-size:16px;
 	}
 	p{
-	color:#6c6c6f;
+
 	font-size:1em;
 	}
-	h1,h2,h3,h4,h5,h6{color:#323233;text-transform:uppercase;}
+	h1,h2,h3,h4,h5,h6{color:#2dd6e6;text-transform:uppercase;}
 .navbar-brand  span{
 	color: #81f5ff;
 	font-size:25px;font-weight:700;letter-spacing:0.1em;
@@ -469,7 +371,6 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     padding-bottom: 0;
     background-color: #212529;
 }
-
 
 
 /*********************************
@@ -816,6 +717,17 @@ body {
     .diamond-grid {
         width: 100%;
         margin: 150px auto;
+	}
+	.navbar {
+		background: #212529;
+	}
+
+	body {
+		background-size: auto;
+	}
+
+	.head {
+		height: 345px;
 	}
 	
 	.col-12 {
