@@ -423,7 +423,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 	background: #25721c3d;
-	border-radius: 30px;
+	border-radius: 90px;
 	box-shadow: #bac7a7 5px 5px 15px 5px;
   }
   .card:hover .card-img-top {
