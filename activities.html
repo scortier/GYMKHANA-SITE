@@ -33,6 +33,7 @@
       href="plugins/OwlCarousel2-2.2.1/animate.css"
     />
     <link rel="stylesheet" type="text/css" href="styles/activities.css" />
+    <link rel="stylesheet" type="text/css" href="styles/scroll.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -43,8 +44,10 @@
       rel="stylesheet"
     />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
   </head>
   <body>
     <div class="super_container">
@@ -637,6 +640,7 @@
         </div>
       </footer>
     </div>
+    <div class="scrollToTopBtn" title="Scroll to top" style="opacity: 0.15;"></div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="styles/bootstrap4/popper.js"></script>
@@ -651,5 +655,44 @@
     <script src="plugins/easing/easing.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/socities.js"></script>
+     <!-- SCROLL BUTTON -->
+     <script>
+      const html = document.querySelector("html");
+      const progressBar = document.querySelector(".progress-bar");
+      const scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+      const height = html.offsetHeight;
+
+      const setProgress = () => {
+        const scrollTop = window.pageYOffset
+          ? window.pageYOffset + html.clientHeight
+          : 0;
+        const width = Math.round(scrollTop / (height / 100));
+
+        // Show scroll-top button
+        scrollToTopBtn.style.opacity = width > 20 ? 1 : 0.15;
+        progressBar.style.width = `${width}%`;
+      };
+
+      const scrollToTop = duration => {
+        const windowYOffset = window.pageYOffset;
+
+        if (duration <= 0) {
+          return;
+        }
+
+        const perTick = ((0 - windowYOffset) / duration) * 10;
+
+        setTimeout(() => {
+          window.scrollTo(0, windowYOffset + perTick);
+          if (windowYOffset === 0) return;
+          scrollToTop(duration - 10);
+        }, 10);
+      };
+
+      window.addEventListener("scroll", setProgress);
+      scrollToTopBtn.addEventListener("click", () => {
+        scrollToTop(600);
+      });
+    </script>
   </body>
 </html>

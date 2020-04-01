@@ -27,34 +27,8 @@
       href="styles/members2019_responsive.css"
     />
     <link rel="icon" href="./image/GSUB1.png" />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      section {
-        width: 100%;
-        height: 300vh;
-      }
-      .gotopbtn {
-        position: fixed;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        background: rgb(170, 165, 165);
-        bottom: 40px;
-        right: 50px;
+    <link rel="stylesheet" type="text/css" href="styles/scroll.css" />
 
-        text-decoration: none;
-        text-align: center;
-        line-height: 50px;
-        color: white;
-        font-size: 22px;
-      }
-    </style>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -1366,7 +1340,8 @@
         </div>
       </footer>
     </div>
-    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    <div class="scrollToTopBtn" title="Scroll to top" style="opacity: 0.15;"></div>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="styles/bootstrap4/popper.js"></script>
     <script src="styles/bootstrap4/bootstrap.min.js"></script>
@@ -1379,5 +1354,44 @@
     <script src="plugins/easing/easing.js"></script>
     <script src="js/teachers_custom.js"></script>
     <script src="js/socities.js"></script>
+     <!-- SCROLL BUTTON -->
+     <script>
+      const html = document.querySelector("html");
+      const progressBar = document.querySelector(".progress-bar");
+      const scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+      const height = html.offsetHeight;
+
+      const setProgress = () => {
+        const scrollTop = window.pageYOffset
+          ? window.pageYOffset + html.clientHeight
+          : 0;
+        const width = Math.round(scrollTop / (height / 100));
+
+        // Show scroll-top button
+        scrollToTopBtn.style.opacity = width > 20 ? 1 : 0.15;
+        progressBar.style.width = `${width}%`;
+      };
+
+      const scrollToTop = duration => {
+        const windowYOffset = window.pageYOffset;
+
+        if (duration <= 0) {
+          return;
+        }
+
+        const perTick = ((0 - windowYOffset) / duration) * 10;
+
+        setTimeout(() => {
+          window.scrollTo(0, windowYOffset + perTick);
+          if (windowYOffset === 0) return;
+          scrollToTop(duration - 10);
+        }, 10);
+      };
+
+      window.addEventListener("scroll", setProgress);
+      scrollToTopBtn.addEventListener("click", () => {
+        scrollToTop(600);
+      });
+    </script>
   </body>
 </html>
