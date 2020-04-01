@@ -1,8 +1,8 @@
 /*SCROLL BUTTON*/
 .scrollToTopBtn {
   position: fixed;
-  bottom: 5vh;
-  right: 5vh;
+  bottom: 10vh;
+  right: 8vh;
   width: 55px;
   height: 55px;
   border-radius: 50px;
