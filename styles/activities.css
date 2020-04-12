@@ -578,7 +578,7 @@ body
 	.container .content {
 		max-height: 400px;
 		overflow-y: scroll;
-		overflow: hidden;
+		overflow: transparent;
 	}
 
 	.home {
