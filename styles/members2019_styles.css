@@ -346,11 +346,11 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	border-radius: 10px;
 	color: black;
   }
-  .home_content h1 {
+  .home_content h1 {            /*********#########CURRENT MEMBERS########***********/
 	font-size: 52px;
 	font-weight: 400;
 	color: #ffffff;
-	line-height: 0.5;
+	line-height: 0.95;
 	font-variant: small-caps;
   }
   
