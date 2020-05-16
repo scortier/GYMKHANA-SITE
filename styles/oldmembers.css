@@ -115,7 +115,7 @@ body
 	font-size: 14px;
 	font-weight: 400;
 	color: #000;
-	background: url(../image/background.png);
+	background: url(../image/background1.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: top;
@@ -333,7 +333,7 @@ section
 
 	font-size:1em;
 	}
-	h1,h2,h3,h4,h5,h6{color:#2dd6e6;text-transform:uppercase;}
+	h1,h2,h3,h4,h5,h6{color:#ffb606;text-transform:uppercase;}
 .navbar-brand  span{
 	color: #ffb606;
 	font-size:25px;font-weight:700;letter-spacing:0.1em;
@@ -635,7 +635,7 @@ body {
 	padding: 40px 40px;
 	display: none;
 	background-color: rgba(0,0,0,0.5);
-	color:#a0ffe6;
+	color:#ffe277;
 
 }
 
@@ -647,8 +647,8 @@ body {
 	height: 150px;
 	width: 100%;
 	background-color: rgba(0,0,0,0.5);
-	color:#a0ffe6;
-	padding-top: 30px;
+	color:#ffb606;
+	padding-top: 35px;
 	font-size: 60px;
 	margin-top: 180px;
 	justify-content: center;
@@ -696,9 +696,9 @@ body {
 .content .user img {
 	align-items: center;
 	justify-content: center;
-	margin: 10px 10px;
-	height: 40px;
-	width: 40px;
+	margin: 10px 20px;
+	height: 50px;
+	width: 50px;
 }
 
 
@@ -716,7 +716,7 @@ body {
 @media (max-width: 768px) {
     .diamond-grid {
         width: 100%;
-        margin: 150px auto;
+        margin: 80px -18px;
 	}
 	.navbar {
 		background: #212529;
@@ -727,7 +727,8 @@ body {
 	}
 
 	.head {
-		height: 345px;
+		height: 150px;
+		font-size: 40px;
 	}
 	
 	.col-12 {

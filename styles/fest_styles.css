@@ -6,12 +6,6 @@
 
 /* END CARD DESIGN */
 
-body {
-  font-family: "Open Sans", sans-serif;
-  margin: 1;
-  background-color: black;
-  min-height: 100%;
-}
 .btn i:before {
   width: 14px;
   height: 14px;
@@ -68,14 +62,13 @@ COLOR PALETTE
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 body {
-	background: url(../image/background.png);
+	background: url(../image/background1.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	/* background-size: 100%; */
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  background: white;
   color: #a5a5a5;
 }
 div {
@@ -346,7 +339,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   .home_content {
 	position: absolute;
 	left: 50%;
-	bottom: 245px;
+	bottom: 25px;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -361,7 +354,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   .home_content h1 {
 	font-size: 72px;
 	font-weight: 400;
-	color: #fff;
+	color: #ffb606;
 	line-height: 0.5;
 	/*font-family:comic san;*/
   }
@@ -373,15 +366,11 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   .page_section {
 	padding-top: 117px;
 	padding-bottom: 117px;
-	background: url(../image/background.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
   background-size: 100%
   }
   section {
-	background: url(../image/background.png);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+
 	background-size: 100%
   }
   .section_title h1 {
@@ -606,3 +595,12 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   }
 
   
+  @media (max-width: 768px){
+
+    #home_content{
+      margin-top: 50px;
+    }
+    .navbar {
+      background: #212529;
+  }
+  }

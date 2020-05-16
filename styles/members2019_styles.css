@@ -48,7 +48,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
- 
+
   color: #fff;
 }
 div {
@@ -326,7 +326,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   .home_content {
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	bottom: 10%;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -674,3 +674,10 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   .footer_social .menu_social_item:last-child {
 	margin-right: 0px;
   }
+
+  @media (max-width: 768px){
+    .navbar {
+      background: #212529;
+  }
+  }
+  

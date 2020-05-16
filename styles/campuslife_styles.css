@@ -55,10 +55,10 @@ body
 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
-	font-weight: 400;background: url(../image/background.png);
+	font-weight: 400;background: url(../image/background1.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: cover;
 
 	color: #a5a5a5;
 }
@@ -343,15 +343,16 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 .home_content
 {
 	box-shadow: 5px;
+	border-radius: 25px;;	
 	position: absolute;
 	left: 50%;
-	bottom: 40px;
+	bottom: 4px;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.44);
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;

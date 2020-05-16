@@ -27,34 +27,7 @@
       type="text/css"
       href="styles/campuslife_responsive.css"
     />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      section {
-        width: 100%;
-        height: 300vh;
-      }
-      .gotopbtn {
-        position: fixed;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        background: rgb(170, 165, 165);
-        bottom: 40px;
-        right: 50px;
-
-        text-decoration: none;
-        text-align: center;
-        line-height: 50px;
-        color: white;
-        font-size: 22px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/scroll.css">
 
   </head>
   <body>
@@ -63,7 +36,8 @@
       <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="#"><span>GUB</span></a>
+            <img src="./image/icons/GSUB1.png" style="padding:10px;width: 60px;height: 60px;">
+				<a class="navbar-brand" href="#"><span>GUB</span></a>
             
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -101,7 +75,7 @@
                     <a class="nav-link" href="activities.html">Activities</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
+                    <a class="nav-link" href="#contact">Contacts</a>
                 </li> 
                 
                 </ul>
@@ -113,7 +87,8 @@
       <div class="home">
         <div
           class="home_content">
-          <h1 style="color: #fff">Campus Life</h1>
+          <h1 style="
+          color:#ffb606;">Campus Life</h1>
         </div>
       </div>
 
@@ -148,7 +123,7 @@
             <p
               style="font-family: Verdana, Arial, Helvetica, sans-serif; color: black"
             >
-              <br />
+              
               The Institute has an administrative block for the official work.
               It has well-built lecture classrooms for various technical
               departments as well as general studies. It has fully equipped and
@@ -164,11 +139,11 @@
               State Bank of India which operates inside the campus.
             </p>
 
-            <h2 style="text-align:center;color:black">Sports</h2>
+            <h2 style="text-align:center;color:black;margin-top: -15px;">Sports</h2>
             <p
               style="font-family: Verdana, Arial, Helvetica, sans-serif; color: black"
             >
-              <br />
+              
               Coming to the Fitness and sports section, our institute has a
               well-equipped and furnished Gym maintained by the Gymkhana
               Students Union Body and NITS authorities in collaboration. Well
@@ -187,11 +162,11 @@
               Students Union Body.
             </p>
 
-            <h2 style="text-align:center;color:black">Other Facilities</h2>
+            <h2 style="text-align:center;color:black;margin-top: -15px;">Other Facilities</h2>
             <p
               style="font-family: Verdana, Arial, Helvetica, sans-serif; color: black"
             >
-              <br />
+              
 
               As far as accommodation is concerned there are 10 boys hostels and
               3 girls hostels in the campus. By talking in view the comfort and
@@ -225,78 +200,93 @@
 
       <footer class="footer">
         <div class="container">
-          
-                <div class="section_title text-center">
-                  <h1></h1>
-                </div>
-            
+  
+          <div class="section_title text-center">
+            <h1></h1>
+          </div>
+  
           <!-- Footer Content -->
-    
+  
           <div class="footer_content">
             <div class="row">
-    
+  
               <!-- Footer Column - About -->
               <div class="col-lg-3 footer_col">
-    
+  
                 <!-- Logo -->
-                <div class="logo_container">
+                <div class="logo_container" style="margin-top:18px">
                   <div class="logo">
-                    <img src="image/icons/GSUB1.png" alt="" >
-                    <span>GUB</span>
+                    <img src="image/icons/GSUB1.png" style="width:3vw;height: 6vh;">
+                    <span style="font-weight: 700;font-size: 20px;">GUB</span>
                   </div>
                 </div>
                 <ul>
-                <li class="footer_about_text"><strong style="font-size: 2.5vh;color: ghostwhite;"> Individually,<br> &nbsp; &nbsp; &nbsp; We are One Drop...<br>Together <br> &nbsp; &nbsp; &nbsp; We are an Ocean...</strong></li>
-              </ul>
+                  <li class="footer_about_text"><strong style="font-size: 2.5vh;color: ghostwhite;">
+                      Individually,<br> &nbsp; &nbsp; &nbsp; We are One Drop...<br>Together <br>
+                      &nbsp; &nbsp; &nbsp; We are an Ocean...</strong></li>
+                </ul>
               </div>
-    
+  
               <!-- Footer Column - Menu -->
-    
+  
               <div class="col-lg-3 footer_col">
                 <div class="footer_column_title"><b>NITS</b></div>
                 <div class="footer_column_content">
                   <ul>
-                    <li class="footer_list_item"><a href="#"><b>Home</b></a></li>
-                    <li class="footer_list_item"><a href="#"><b>Members</b></a></li>
-                    <li class="footer_list_item"><a href="#"><b>Fest</b></a></li>
-                    <li class="footer_list_item"><a href="#"><b>Societies</b></a></li>
-                    <li class="footer_list_item"><a href="#"><b>Campus Life</b></a></li>
-                    <li class="footer_list_item"><a href="#"></a></li>
+                    <li class="footer_list_item"><a href="index.html"><b>Home</b></a></li>
+                    <li class="footer_list_item"><a href="Current Members(2019).html"><b>Members</b></a></li>
+                    <li class="footer_list_item"><a href="FEST.html"><b>Fest</b></a></li>
+                    <li class="footer_list_item"><a href="societies.html"><b>Societies</b></a></li>
+                    <li class="footer_list_item"><a href="Campus Life.html"><b>Campus Life</b></a></li>
+                    
                   </ul>
                 </div>
               </div>
-    
+  
               <!-- Footer Column - Usefull Links -->
-    
+  
               <div class="col-lg-3 footer_col">
                 <div class="footer_column_title"><b>Useful Links</b></div>
                 <div class="footer_column_content">
                   <ul>
-                    <li class="footer_list_item"><a href="http://www.nits.ac.in/"target="_blank" data-toggle="tooltip" data-placement="left" title="NIT Silchar Website"><b>nits.ac.in</b></a></li>
-                    <li class="footer_list_item"><a href="http://www.tecnoesis.org/?fbclid=IwAR2GxOEyD55Vil5cTnaK1n1ihCgVxeCgms4xGoK1eo8wqH8Q1eWZHZruhb4"target="_blank"data-toggle="tooltip" data-placement="left" title="Tecnoesis"><b>tecnoesis.org</b></a></li>
-                    <li class="footer_list_item"><a href="http://incand.org/"target="_blank" data-toggle="tooltip" data-placement="left" title="Incandescence"><b>http://incand.org</b></a></li>
-                    <li class="footer_list_item"><a href="http://www.nits.ac.in/AIINIT/index.html" target="_blank" data-toggle="tooltip" data-placement="left" title="ALL INDIA INTER NIT"><b>AIINIT</b></a></li>
+                    <li class="footer_list_item"><a href="http://18.191.249.98:3000/?fbclid=IwAR1zXNaF39tKIdAAWf3E5oHbeoo58PKQwBCdyWV9_yueuqg5-Yg4d8APh_w" target="_blank"
+                      data-toggle="tooltip" data-placement="left"
+                      title="NIT Silchar Website"><b>Resource Hub</b></a></li>
+                    <li class="footer_list_item"><a href="http://www.nits.ac.in/" target="_blank"
+                        data-toggle="tooltip" data-placement="left"
+                        title="NIT Silchar Website"><b>nits.ac.in</b></a></li>
+                    <li class="footer_list_item"><a
+                        href="http://www.tecnoesis.org/?fbclid=IwAR2GxOEyD55Vil5cTnaK1n1ihCgVxeCgms4xGoK1eo8wqH8Q1eWZHZruhb4"
+                        target="_blank" data-toggle="tooltip" data-placement="left"
+                        title="Tecnoesis"><b>tecnoesis.org</b></a></li>
+                    <li class="footer_list_item"><a href="http://incand.org/" target="_blank"
+                        data-toggle="tooltip" data-placement="left"
+                        title="Incandescence"><b>http://incand.org</b></a></li>
+                    <li class="footer_list_item"><a href="http://www.nits.ac.in/AIINIT/index.html"
+                        target="_blank" data-toggle="tooltip" data-placement="left"
+                        title="ALL INDIA INTER NIT"><b>AIINIT</b></a></li>
                   </ul>
-                  
+  
                 </div>
               </div>
-    
+  
               <!-- Footer Column - Contact -->
-    
+  
               <div class="col-lg-3 footer_col" id="contact">
                 <div class="footer_column_title"><b>Contact Us</b></div>
                 <div class="footer_column_content">
                   <ul>
                     <li class="footer_contact_item">
                       <div class="footer_contact_icon">
-                        <img src="image/icons/envelope.png"></img>
+                        <img src="image/icons/placeholder.svg" >
                       </div>
                       <span>
-                      <strong>Gymkhana Union Body
-                      <br>
-                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;	NIT Silchar,Silchar				<!---ISSSUUEEEEE---->
-                      <br>
-                      &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;	Assam-788010
+                        <strong>Gymkhana Union Body
+                          <br>
+                          &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; NIT Silchar,Silchar
+                          <!---ISSSUUEEEEE---->
+                          <br>
+                          &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Assam-788010
                         </strong>
                       </span>
                     </li>
@@ -308,56 +298,69 @@
                     </li>
                     <li class="footer_contact_item">
                       <div class="footer_contact_icon">
-                        <img src="image/icons/envelope.png"></img>
-
-                      </div><a href="mailto://@gymkhanaunionbodynitsilchar@gmail.com">gymkhanaunionbodynitsilchar@gmail.com</a><br><a href="mailto://vp_gymkhana@nits.ac.in">vp_gymkhana@nits.ac.in</a>
+                        <img src="image/icons/envelope.svg"></img>
+                      </div><a
+                        href="mailto://@gymkhanaunionbodynitsilchar@gmail.com">gymkhanaunionbodynitsilchar@gmail.com</a><br><a
+                        href="mailto://vp_gymkhana@nits.ac.in">vp_gymkhana@nits.ac.in</a>
                       <br><a href="mailto://gs_gymkhana@nits.ac.in">gs_gymkhana@nits.ac.in</a>
-    
+  
                     </li>
                   </ul>
                 </div>
               </div>
-    
+  
             </div>
           </div>
-    
+  
           <!-- Footer -->
-    
+  
           <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
             <div class="footer_copyright">
-    
-              <span><h5 style="color: ghostwhite;">
-    
-      &copy;<script>document.write(new Date().getFullYear());</script> GUB NIT SILCHAR</h5> <!-- <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
+  
+              <span>
+                <h5 style="color: ghostwhite;">
+  
+                  &copy;<script>
+                    document.write(new Date().getFullYear());
+                  </script> GUB NIT SILCHAR</h5>
+                <!-- <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
               </span>
               <span>
                 <ul>
-                  <li><h4 style="color: ghostwhite;"><strong>Developers:-</strong></h4></li>
-                  
-                  <li class="menu_social_item"><a href="https://www.linkedin.com/in/aditya-singh-sisodiya-scortier/"target="_blank">Aditya Singh Sisodiya</a>  
+                  <li>
+                    <h4 style="color: ghostwhite;font-size:15px ;"><strong>Developers:-</strong></h4>
                   </li>
-                  
-                  <li class="menu_social_item"target="_blank"><a href="https://www.linkedin.com/in/nabanita-bania-27b141169/" target="_blank">Nabanita Bania</a>
+  
+                  <li class="menu_social_item"><a
+                      href="https://www.linkedin.com/in/aditya-singh-sisodiya-scortier/"
+                      target="_blank">Aditya Singh Sisodiya</a>
                   </li>
-                  
+  
+                  <li class="menu_social_item" target="_blank"><a
+                      href="https://www.linkedin.com/in/nabanita-bania-27b141169/"
+                      target="_blank">Nabanita Bania</a>
+                  </li>
+  
                 </ul>
-                
+  
               </span>
             </div>
             <div class="footer_social ml-sm-auto">
               <ul class="menu_social">
-                
-                <li class="menu_social_item"><a href="https://www.facebook.com/GymkhanaUnionBodyNitSilchar" target="_blank"><img src="image/icons/fbb.png" height="75px" width="75px"></a></li>
-                
+  
+                <li class="menu_social_item"><a href="https://www.facebook.com/GymkhanaUnionBodyNitSilchar"
+                    target="_blank"><img src="image/icons/fbb.png" height="75px" width="75px"></a></li>
+  
               </ul>
             </div>
           </div>
-    
+  
         </div>
       </footer>
     </div>
 
-    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    <a class="gotopbtn"   href="#">  </a>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="styles/bootstrap4/popper.js"></script>
     <script src="styles/bootstrap4/bootstrap.min.js"></script>
@@ -370,5 +373,6 @@
     <script src="plugins/easing/easing.js"></script>
     <script src="js/courses_custom.js"></script>
     <script src="js/socities.js"></script>
+
   </body>
 </html>

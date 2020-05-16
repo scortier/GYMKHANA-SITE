@@ -154,7 +154,7 @@
 	}
 	.teacher:last-child
 	{
-		margin-bottom: 0px !important;
+		margin-bottom: -150px !important;
 	}
 	.milestone_col
 	{
