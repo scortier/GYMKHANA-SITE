@@ -298,9 +298,8 @@
 	{
 		padding-left: 15px;
 	}
-	.logo img
-	{
-		width: 30px;
+	.logo img {
+		width: 45px;
 	}
 	.logo span
 	{
@@ -392,12 +391,12 @@
 	}
 	.event_date
 	{
-		width: 100px;
-		height: 100px;
+		width: 85px;
+		height: 85px;
 	}
 	.event_day
 	{
-		font-size: 36px;
+		font-size: 30px;
 	}
 	.event_month
 	{

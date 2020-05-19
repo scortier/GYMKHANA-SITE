@@ -641,6 +641,8 @@ body {
 
 .photo {
 	border-radius: 6px;
+	width: 300px;
+	height: 300px;
 }
 
 .head {
@@ -670,7 +672,7 @@ body {
   :target {
 	 position: relative;
 	 border-top: 200px solid transparent;
-	 margin: -200px 0 40px;
+	 margin: -120px 0 40px;
 	 background-clip: padding-box;
   }
   
@@ -716,7 +718,7 @@ body {
 @media (max-width: 768px) {
     .diamond-grid {
         width: 100%;
-        margin: 80px -18px;
+        margin: 80px -25px;
 	}
 	.navbar {
 		background: #212529;
@@ -734,7 +736,22 @@ body {
 	.col-12 {
 		width: 100%;
 	}
+
+	.photo{
+		width: 280px;
+		height: 280px;
+	}
+
+	.content .user {
+		margin: auto 30px;
+	}
 }
 
 
 
+
+.logo img
+{
+	width: 50px;
+	height: 50px;
+}

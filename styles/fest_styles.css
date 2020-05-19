@@ -604,3 +604,12 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
       background: #212529;
   }
   }
+
+  .open{
+    height: 295px;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 50px;
+  }

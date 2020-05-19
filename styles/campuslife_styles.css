@@ -685,3 +685,15 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 {
 	margin-right: 0px;
 }
+
+@media (max-width: 768px){
+	.navbar {
+		background: #212529;
+	}
+}
+
+.logo img
+{
+	width: 50px;
+	height: 50px;
+}

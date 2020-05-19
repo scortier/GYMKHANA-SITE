@@ -317,6 +317,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	height: 100%;
   }
   .home_background {
+  background: url(../image/background.jpg);
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -679,5 +680,13 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     .navbar {
       background: #212529;
   }
+
+  .xyz {
+    height: 15300px;
   }
-  
+  }
+  .logo img
+{
+	width: 50px;
+	height: 50px;
+}

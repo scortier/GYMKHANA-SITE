@@ -45,3 +45,6 @@ window.onclick = function(event) {
      }
     }
 }
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('show');
+});
