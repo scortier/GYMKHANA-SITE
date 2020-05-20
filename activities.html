@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Course Project" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./image/icons/GSUB1.png" />
+    <link rel="icon" href="./image/icons/GSUB12.png" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -44,7 +44,7 @@
     />
     <link rel="stylesheet" href="styles/scroll.css">
   </head>
-  <body>
+  <body id="div">
     <div class="super_container">
       <!-- Header -->
       
@@ -100,7 +100,7 @@
 
       <!-- Home -->
       <div class="head">
-        <h1>Student Activities</h1>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Student Activities</h1>
       </div>
       <div id="so-cult">
 
@@ -120,7 +120,7 @@
                   The festival of the birthday of Lord Krishna, Janmashtami, was
                   celebrated on 5th September with great enthusiasm. A puja for
                   Lord Krishna was organized on that auspicious day in Hostel
-                  -7, which was followed by the most exciting " Dahi-Handi"
+                  7, which was followed by the most exciting " Dahi-Handi"
                   competition, which involves the breaking of an earthen pot
                   raised to a considerable height. The zeal and energy of the
                   students was vividly demonstrated in the competition where all
@@ -175,7 +175,7 @@
                 <div class="container content">
                   <h1>Independence Day</h1>
 
-                  NITS being the abode of patriotic souls, celebrated the 69th
+                  NITS being the abode of patriotic souls, celebrated the 70th
                   Independence day with great zeal and enthusiasm. The tricolor
                   was hoisted by Director Sir, followed by his inspiring speech.
                   Events that followed included the marvellous parade by the NCC
@@ -564,4 +564,13 @@
     <script src="js/custom.js"></script>
     <script src="js/socities.js"></script>
   </body>
+  <script>
+    let bodydiv = document.getElementById('div');
+    let mainId = document.getElementById('collapsibleNavbar');
+    bodydiv.addEventListener('click',clickoutside);
+    function clickoutside(e){
+      mainId.classList.remove('show');
+    }
+  </script>
+
 </html>

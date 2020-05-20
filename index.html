@@ -20,7 +20,7 @@
 	
 </head>
 
-<body>
+<body id="div">
 
 	<div class="super_container">
 
@@ -204,14 +204,14 @@
 					<p style="font-size: 15px;font-style: oblique;padding: 0%;text-align: justify;line-height: 2;">
 						Gymkhana Union Body is the official body to look after overall students activity at NIT Silchar.
 						The members are officially elected after a proper election system in the institute itself by the
-						whole student fraternity of NIT Silchar.<br>
+						whole student fraternity of NIT Silchar.
 
-						The Gymkhana Students' Union Body of National Institute of Technology Silchar comprises the
+						The Gymkhana Students' Union Body comprises the
 						office bearers of the institute, who are elected by the students on an annual basis. The
 						Gymkhana serves majorly as the very voice of the students, besides being responsible for the
 						organization and conduction of several events, workshops and fests in the college. The Dean of
-						students' welfare sits atop the Gymkhana as its President. The other members include the General
-						Secretary, the Vice-President, the General Secretary Cultural, the General Secretary Technical
+						students' welfare sits atop the Gymkhana as its President. The other members include  the Vice-President,the General
+						Secretary, the General Secretary Cultural, the General Secretary Technical
 						and the General Secretary Sports. These constitute the senior Gymkhana members. The heads of the
 						several clubs and societies make up the junior Gymkhana.
 					</p>
@@ -228,7 +228,7 @@
 						exercising financial control, instituting and declaring awards.<br>
 						2. It forms and monitor any sub-committees, clubs/shells or societies or disband the existing
 						ones and when necessary with the approval of the competent authority.<br>
-						3. It has three major divisions e.g., cultural committee , sports committee, and hostel affairs
+						3. It has three major divisions e.g., cultural committee , sports committee, and technical affairs
 						committee.<br>
 						4. The Gymkhana Council, towards the end of its tenure prepares an annual report of its
 						activities accounts etc. Our goal is to bring overall development in NITians through cultivating
@@ -401,7 +401,7 @@
 								<div class="owl-item wow fadeInUp" data-wow-delay="300ms">
 									<div class="testimonials_item text-center">
 										<div class="quote wow fadeInUp" data-wow-delay="300ms">
-											<h1 style="color:ghostwhite;">What our Professor say</h1>“
+											<h1 style="color:ghostwhite;">What our President say</h1>“
 										</div>
 										<p class="testimonials_text">In aliquam, augue a gravida rutrum, ante nisl
 											fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada,
@@ -728,5 +728,13 @@
 	<script src="js/custom.js"></script>
 	<script src="js/socities.js"></script>
 </body>
+<script>
+	let bodydiv = document.getElementById('div');
+	let mainId = document.getElementById('collapsibleNavbar');
+	bodydiv.addEventListener('click',clickoutside);
+	function clickoutside(e){
+		mainId.classList.remove('show');
+	}
+</script>
 
 </html>

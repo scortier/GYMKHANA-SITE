@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="styles/fest_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/cards.css">
 <link rel="stylesheet" type="text/css" href="styles/fest_responsive.css">
-<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 <link rel="stylesheet" href="styles/scroll.css">
 <style>
 	/* Force scrollbars onto browser window */
@@ -49,7 +49,7 @@
 	</style>
 
 </head> 
-<body>
+<body id="div">
 
 <div class="super_container">
 
@@ -221,7 +221,7 @@
 							<!-- Logo -->
 							<div class="logo_container" style="margin-top:18px">
 								<div class="logo">
-									<img src="image/icons/GSUB122.png"  >
+									<img src="image/icons/GSUB12.png"  >
 									<span style="font-weight: 700;font-size: 20px;">GUB</span>
 								</div>
 							</div>
@@ -380,5 +380,14 @@
 	<script src="js/courses_custom.js"></script>
 	<script src="js/socities.js"></script>
 	</body>
+	<script>
+		let bodydiv = document.getElementById('div');
+		let mainId = document.getElementById('collapsibleNavbar');
+		bodydiv.addEventListener('click',clickoutside);
+		function clickoutside(e){
+			mainId.classList.remove('show');
+		}
+	</script>
+	
 </html>
 
