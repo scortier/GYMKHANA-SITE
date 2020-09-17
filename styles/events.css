@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+* {
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    text-align: center;
+    font-family: "Roboto Mono";
+    padding: 1em;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+h4 {
+    text-align: initial;
+    padding: 1rem;
+}
+
+.hs {
+    display: grid;
+    grid-template-columns: 10px;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.hs:before,
+.hs:after {
+    content: "";
+}
+
+
+/* Demo styles */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* .hs > li,
+.item {
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  padding-right: 1em;
+} */
+
+.no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.wrapper {
+    display: flexbox;
+    grid-template-rows: auto;
+    padding: 0% 10% 0% 10%;
+}
+
+.head {
+    font-family: "Century Gothic";
+    font-weight: 600;
+    font-size: 3em;
+    text-align: initial;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        display: table-row;
+    }
+    .headmenu a {
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+    .headmenu li {
+        color: #f7f7f7;
+        background: #3b3b3b;
+        display: block;
+        float: left;
+        padding: 0.5em;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+}
+
+.headmenu a {
+    text-decoration: none;
+}
+
+.headmenu nav {
+    font-family: monospace;
+}
+
+.headmenu ul {
+    background: #f7f7f7;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.headmenu li {
+    color: #f7f7f7;
+    background: #3b3b3b;
+    display: block;
+    float: left;
+    padding: 0.6em;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.headmenu li a {
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+li:hover>a {
+    color: #3b3b3b;
+}
+
+.headmenu li:hover {
+    background: rgb(255, 208, 0);
+    cursor: pointer;
+}
+
+.headmenu ul li ul {
+    background: rgb(255, 208, 0);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 2rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+.headmenu ul li:hover>ul,
+.headmenu ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.headmenu ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.headmenu {
+    margin: auto;
+    margin-right: 0;
+}
+
+.footlink {
+    color: #f7f7f7;
+}
+
+#footer {
+    padding: 2em 0 2em 0;
+    background-color: #1b1b1f;
+    text-align: center;
+}
+
+#footer .inner {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Scroll Snap Code */
+
+.container {
+    flex-basis: 50%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    scroll-snap-type: y proximity;
+}
+
+li {
+    scroll-snap-align: start;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.foot {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+    background-color: #2c2c32;
+    margin: -1.5em;
+}
+
+.fingers {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.logo {
+    height: 5em;
+    background-color: #82cec6;
+}
+
+.meettheteam {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 1em;
+}
+
+a {
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover {
+    color: #fff;
+    border: none;
+}
