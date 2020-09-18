@@ -1,0 +1,17 @@
+.banner{
+    height: 400px;
+    background: url('../image/bg-.jpg') center ;
+}
+.banner-inner{
+    padding-top: 200px ;
+    text-align: center;
+}
+.banner-inner h1{
+    color: white;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+.lower-panel{
+    background-color: white;
+}
