@@ -11,7 +11,53 @@
     font-size: 48px;
     letter-spacing: 3px;
 }
-
 .lower-panel{
     background-color: white;
+}
+.left-card{
+    position: relative;
+    top: -50px;
+    left: 200px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 10px 18px rgb(58, 25, 25);
+    transition: 0.3s;
+}
+.left-card:hover{
+    box-shadow: 5px 5px 10px rgb(32, 27, 27);
+    transform: scale(1.03);
+}
+.heading{
+    border-radius: 15px 15px 4px 4px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    font-size: xx-large;
+    color: white;
+}
+.image-1,.image-2{
+    border-radius: 7px;
+    height: 200px;
+    background-color: gray;
+    margin: 20px;
+    box-shadow: 3px 3px 6px;
+    transition: 0.2s;
+}
+.image-1:hover,.image-2:hover{
+    transform: scale(1.01);
+    box-shadow: 4px 4px 5px;
+}
+.form-link{
+    padding: 10px 30px;
+}
+.form-link h2{
+    font-size: x-large;
+}
+.form-link a{
+    font-size: larger;
+    word-wrap: break-word;
+}
+.deadline{
+    padding:20px 30px ;
 }
