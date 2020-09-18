@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-body{
+body {
     background: url(../image/background1.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 * {
@@ -14,14 +14,28 @@ body{
 .hs {
     display: grid;
     grid-template-columns: 10px;
-    grid-auto-flow: column;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    /* overflow-x: scroll;
+    scroll-behavior: smooth; */
 }
 
 .hs:before,
 .hs:after {
     content: "";
+}
+
+@media (min-width:800px) {
+    .hs {
+        margin-left: 100px;
+        margin-right: 100px;
+        grid-auto-flow: column;
+    }
+}
+
+@media (max-width:800px) {
+    .hs {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 
@@ -32,32 +46,31 @@ ul {
     padding: 0;
 }
 
-.home_content
-{
-	box-shadow: 5px;
-	border-radius: 25px;;	
-	position: absolute;
-	left: 50%;
-	bottom: 4px;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	background: rgba(0,0,0,0.44);
-	padding-top: 24px;
-	padding-bottom: 18px;
-	padding-left: 39px;
-	padding-right: 42px;
-}
-.home_content h1
-{
-	font-size: 72px;
-	font-weight: 400;
-	color: #FFFFFF;
-	line-height: 0.85;
+.home_content {
+    box-shadow: 5px;
+    border-radius: 25px;
+    ;
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.44);
+    padding-top: 24px;
+    padding-bottom: 18px;
+    padding-left: 39px;
+    padding-right: 42px;
 }
 
+.home_content h1 {
+    font-size: 72px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.85;
+}
 
 
 /* .hs > li,
@@ -185,8 +198,8 @@ li:hover>a {
 }
 
 
-
 /* Scroll Snap Code */
+
 
 /* .container {
     flex-basis: 50%;
@@ -223,6 +236,7 @@ li {
     height: 5em;
     background-color: #82cec6;
 }
+
 
 /* a {
     -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
