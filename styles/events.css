@@ -1,22 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+body{
+    background: url(../image/background1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 * {
     box-sizing: border-box;
     font-weight: normal;
-}
-
-body {
-    text-align: center;
-    font-family: "Roboto Mono";
-    padding: 1em;
-}
-
-h1 {
-    font-size: 1em;
-}
-
-h4 {
-    text-align: initial;
-    padding: 1rem;
 }
 
 .hs {
@@ -40,6 +32,33 @@ ul {
     padding: 0;
 }
 
+.home_content
+{
+	box-shadow: 5px;
+	border-radius: 25px;;	
+	position: absolute;
+	left: 50%;
+	bottom: 4px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: rgba(0,0,0,0.44);
+	padding-top: 24px;
+	padding-bottom: 18px;
+	padding-left: 39px;
+	padding-right: 42px;
+}
+.home_content h1
+{
+	font-size: 72px;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 0.85;
+}
+
+
 
 /* .hs > li,
 .item {
@@ -59,9 +78,10 @@ ul {
 }
 
 .wrapper {
+    background: white;
     display: flexbox;
     grid-template-rows: auto;
-    padding: 0% 10% 0% 10%;
+    padding: 0% 15% 0% 15%;
 }
 
 .head {
@@ -164,31 +184,17 @@ li:hover>a {
     margin-right: 0;
 }
 
-.footlink {
-    color: #f7f7f7;
-}
-
-#footer {
-    padding: 2em 0 2em 0;
-    background-color: #1b1b1f;
-    text-align: center;
-}
-
-#footer .inner {
-    width: 50%;
-    margin: 0 auto;
-}
 
 
 /* Scroll Snap Code */
 
-.container {
+/* .container {
     flex-basis: 50%;
     max-height: 100vh;
     overflow-y: scroll;
     border: 1px solid gray;
     scroll-snap-type: y proximity;
-}
+} */
 
 li {
     scroll-snap-align: start;
@@ -218,14 +224,7 @@ li {
     background-color: #82cec6;
 }
 
-.meettheteam {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    padding: 1em;
-}
-
-a {
+/* a {
     -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -238,4 +237,4 @@ a {
 a:hover {
     color: #fff;
     border: none;
-}
+} */
