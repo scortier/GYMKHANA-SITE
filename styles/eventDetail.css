@@ -85,6 +85,7 @@
 }
 .right-card{
     padding: 70px;
+    width: minmax(auto,);
 }
 .publisher{
     padding: 3px;
@@ -113,4 +114,36 @@
 }
 .details p{
     color: white;
+}
+@media screen and (max-width: 1150px){
+    .left-col{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .right-col{
+        width: 100%;
+        padding: 0px;
+    }
+    .left-card{
+        float: left;
+        margin: 0px;
+    }
+    .right-card{
+        margin: 0px;
+        padding: 30px;
+    }
+    
+}
+@media screen and (max-width: 425px){
+    .left-card{
+        width: 300px;
+    }
+    .details{
+        padding: 10px;
+    }
+    .right-card{
+        margin: 0px;
+        padding: 10px;
+    }
 }
