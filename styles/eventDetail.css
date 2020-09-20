@@ -123,6 +123,7 @@ img{
     color: black;
     font-weight: 600;
     display: flex;
+    flex-wrap: wrap;
 }
 .deadline span{
     margin-left: 30px;
@@ -144,7 +145,7 @@ img{
 .details p{
     color: black;
 }
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1350px){
     .left-col{
         width: 100%;
         display: flex;
@@ -157,14 +158,18 @@ img{
     .left-card{
         float: left;
         margin: 0px;
+        top: -30px ;
     }
     .right-card{
         margin: 0px;
         padding: 30px;
     }
-    
+    .back{
+        top: 15vh;
+        left: 2vw;
+    }
 }
-@media screen and (max-width: 425px){
+@media screen and (max-width: 430px){
     .left-card{
         width: 300px;
     }
@@ -174,6 +179,54 @@ img{
     .right-card{
         margin: 0px;
         padding: 10px;
+    }
+    .deadline{
+        margin: 10px 30px;
+        font-size: 17px;
+        color: black;
+        font-weight: 600;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .deadline span{
+        margin-left: 30px;
+        font-size: 23px;
+        color: rgb(247, 36, 36) ;
+    }
+    .timeLeft{
+        font-size: 17px;
+        margin-left: 0px;
+    }
+    .image-1{
+        height: 250px;
+    }
+    .back{
+        font-size: larger;
+    }
+}
+@media screen and (max-width: 375px){
+    .banner-inner h1{
+        font-size: 40px;
+    }
+    .left-card{
+        width: 290px;
+    }
+    .deadline{
+        margin: 10px 30px;
+        font-size: 15px;
+        color: black;
+        font-weight: 600;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .deadline span{
+        margin-left: 5px;
+        font-size: 20px;
+        color: rgb(247, 36, 36) ;
+    }
+    .timeLeft{
+        font-size: 15px;
+        margin-left: 0px;
     }
 }
 .footer_social{
