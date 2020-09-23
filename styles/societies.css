@@ -615,6 +615,7 @@ background: url(../image/background1.jpg);
 }
 
 .back::-webkit-scrollbar {
+	display: none;
 	width: 6px;
     background-color: #F5F5F5;
 }
