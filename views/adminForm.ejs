@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles/adminForm.css">
+    <title>Admin Form</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-inner container">
+            <img src="../public/image/icons/GSUB12.png">
+            <h1>Admin Form</h1>
+        </div>
+    </div>
+    <div class="lower-pannel">
+        <form action="">
+            <label for="heading">Heading -</label><br>
+            <input type="text" name="heading" placeholder="Heading..."><br>
+            <label for="postedBy">Posted By -</label><br>
+            <input type="text" name="postedBy" placeholder="Posted By..."><br>
+            <label for="deadline">Deadline -</label><br>
+            <input type="date" name="deadline">
+            <input type="time" name="deadline"><br>
+            <label for="details">Details</label><br>
+            <!-- <input type="text" name="details" class="detailsInput" placeholder="Details..."><br> -->
+            <span class="textarea" role="textbox" contenteditable></span>
+            <label for="links">Links & Google Doc</label><br>
+            <input type="url" name="links" placeholder="Links..."><br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
