@@ -93,6 +93,11 @@ app.get("/societies", function(req, res) {
     res.render("societies.ejs");
 });
 
+//Adding event Page
+app.get("/nits/GUB/eventForm", function(req, res) {
+    res.render("adminForm.ejs");
+});
+
 //Post new event
 app.post("/events", function(req, res) {
     var title = req.body.title;
