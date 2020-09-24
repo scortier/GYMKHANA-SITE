@@ -461,11 +461,12 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(calc(-50% + 30px));
-  width: 58px;
-  height: 58px;
-  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  background:#f5f5f58c;
   z-index: 9;
   cursor: pointer;
+  border-radius: 50%;
 }
 .hero_slider_nav:hover {
   background: #ffb606;

@@ -63,10 +63,10 @@ body{
     border-radius: 55px 55px 4px 4px;
     padding: 60px;
     text-align: center;
-    background-color: red;
+    background-color: #4d88ff;
     font-size: 33px;
     color: white;
-    font-family: century Gothic;
+    font-family: "Roboto", sans-serif;
 }
 img{
     width: 90%;
