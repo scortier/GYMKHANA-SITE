@@ -4,7 +4,6 @@ var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 
-// var Event = require("./models/event");
 
 app.use(express.static("public"));
 app.use(
@@ -12,7 +11,24 @@ app.use(
         extended: true,
     })
 );
+app.use(bodyParser.json());
 app.use(methodOverride("_method"));
+
+mongoose.connect("mongodb://localhost/db_GUB", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+var eventSchema = new mongoose.Schema({
+    title: String,
+    body: String,
+    deadline: String,
+    author: String,
+    category: String
+});
+
+//Create Mongoose Model
+var Event = mongoose.model("Event", eventSchema);
+
 
 //Default Routing
 app.get("/", function(req, res) {
@@ -46,7 +62,15 @@ app.get("/members", function(req, res) {
 
 //Events Page
 app.get("/events", function(req, res) {
-    res.render("events2.ejs");
+    Event.find({}, function(err, allEvents) {
+        if (err) {
+            console.log(err);
+        } else {
+            res.render("events2.ejs", {
+                events: allEvents
+            });
+        }
+    })
 });
 
 //Oldmembers Page
@@ -67,6 +91,32 @@ app.get("/oldmembers3", function(req, res) {
 //Societies Page
 app.get("/societies", function(req, res) {
     res.render("societies.ejs");
+});
+
+//Post new event
+app.post("/events", function(req, res) {
+    var title = req.body.title;
+    var body = req.body.body;
+    var deadline = req.body.deadline;
+    var author = req.body.author;
+    var category = req.body.category;
+    var newEvent = {
+        title: title,
+        body: body,
+        deadline: deadline,
+        author: author,
+        category: category
+    };
+    console.log(newEvent);
+    //Create a new campground and save to DB
+    Event.create(newEvent, function(err, newlyCreated) {
+        if (err) {
+            console.log(err);
+        } else {
+            //redirect to campgrounds
+            res.redirect("/events");
+        }
+    })
 });
 
 //########################################################
