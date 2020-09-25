@@ -35,6 +35,14 @@ app.get("/", function(req, res) {
     res.redirect("/index");
 });
 
+// app.get("/adminform",function(req,res){
+//     res.render("adminForm.ejs");
+// })
+
+// app.get("/eventdetail",function(req,res){
+//     res.render("eventdetail.ejs",{data : {title: 'important notice', author: 'Aditya Agarwal', body: 'details of the events goes here!!', deadline:'12/12/12'} });
+// })
+
 //Home page
 app.get("/index", function(req, res) {
     res.render("index.ejs");
