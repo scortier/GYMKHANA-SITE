@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/styles/adminForm.css">
+    <link rel="stylesheet" href="styles/adminForm.css">
     <title>Admin Form</title>
 </head>
 <body>
     <div class="banner">
         <div class="banner-inner container">
-            <img src="../public/image/icons/GSUB12.png">
+            <img src="image/icons/GSUB12.png">
             <h1>Admin Form</h1>
         </div>
     </div>
     <div class="lower-pannel">
-        <form action="">
+        <form action="/adminform" method="POST">
+            <label for="category">Category -</label><br>
+            <select name="category">
+                <option value="Administration" selected>Administration</option>
+                <option value="Gymkhana">Gymkhana</option>
+                <option value="Clubs">Clubs</option>
+            </select><br>
             <label for="heading">Heading -</label><br>
             <input type="text" name="heading" placeholder="Heading..."><br>
             <label for="postedBy">Posted By -</label><br>
@@ -23,8 +29,8 @@
             <input type="date" name="deadline">
             <input type="time" name="deadline"><br>
             <label for="details">Details</label><br>
-            <!-- <input type="text" name="details" class="detailsInput" placeholder="Details..."><br> -->
-            <span class="textarea" role="textbox" contenteditable></span>
+            <input type="text" name="details" class="detialsInput" placeholder="Details..."><br>
+            <!-- <span name="details" class="textarea" role="textbox" contenteditable></span> -->
             <label for="links">Links & Google Doc</label><br>
             <input type="url" name="links" placeholder="Links..."><br>
             <button>Submit</button>

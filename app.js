@@ -14,21 +14,39 @@ app.use(
 app.use(bodyParser.json());
 app.use(methodOverride("_method"));
 
-mongoose.connect("mongodb://localhost/db_GUB", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+const connectDB = async ()=>{
+    await mongoose.connect('mongodb+srv://aditya2712:aditya2712@cluster0.budh1.mongodb.net/events?retryWrites=true&w=majority',{ 
+        useUnifiedTopology: true,
+        useNewUrlParser: true 
+    });
+    console.log("database connected!");  
+}
+
+connectDB();
+
 var eventSchema = new mongoose.Schema({
-    title: String,
-    body: String,
-    deadline: String,
-    author: String,
-    category: String
+    heading: String,
+    details: String,
+    postedBy: String,
+    category: String,
+    links: String,
+    deadline: { type: Date, default: Date.now }
 });
 
 //Create Mongoose Model
 var Event = mongoose.model("Event", eventSchema);
 
+//adminForm 
+app.get("/adminform",function(req,res){
+    res.render("adminForm.ejs");
+})
+
+app.post("/adminform",function(req,res){
+    var newEvent=new Event(req.body);
+    newEvent.save();
+    console.log(req.body);
+    res.send("Event Created!!") ;
+})
 
 //Default Routing
 app.get("/", function(req, res) {
@@ -60,7 +78,7 @@ app.get("/members", function(req, res) {
     res.render("Current_Members(2019).ejs");
 });
 
-//Events Page
+// Events Page
 app.get("/events", function(req, res) {
     Event.find({}, function(err, allEvents) {
         if (err) {
@@ -94,30 +112,30 @@ app.get("/societies", function(req, res) {
 });
 
 //Post new event
-app.post("/events", function(req, res) {
-    var title = req.body.title;
-    var body = req.body.body;
-    var deadline = req.body.deadline;
-    var author = req.body.author;
-    var category = req.body.category;
-    var newEvent = {
-        title: title,
-        body: body,
-        deadline: deadline,
-        author: author,
-        category: category
-    };
-    console.log(newEvent);
-    //Create a new campground and save to DB
-    Event.create(newEvent, function(err, newlyCreated) {
-        if (err) {
-            console.log(err);
-        } else {
-            //redirect to campgrounds
-            res.redirect("/events");
-        }
-    })
-});
+// app.post("/events", function(req, res) {
+//     var title = req.body.title;
+//     var body = req.body.body;
+//     var deadline = req.body.deadline;
+//     var author = req.body.author;
+//     var category = req.body.category;
+//     var newEvent = {
+//         title: title,
+//         body: body,
+//         deadline: deadline,
+//         author: author,
+//         category: category
+//     };
+//     console.log(newEvent);
+//     //Create a new campground and save to DB
+//     Event.create(newEvent, function(err, newlyCreated) {
+//         if (err) {
+//             console.log(err);
+//         } else {
+//             //redirect to campgrounds
+//             res.redirect("/events");
+//         }
+//     })
+// });
 
 //########################################################
 
