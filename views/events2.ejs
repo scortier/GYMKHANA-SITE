@@ -94,32 +94,32 @@
             <div class="items">
                 <!-- <div class="before"></div> -->
                 <% events.forEach(function(event){if(event.category==='Administration'){%>
-                        <div class="item item1">
-                            <div class="top">
-                                <div class="back-img"></div>
-                                <div class="sub-topic">
-                                    <h5>
-                                        <%=event.heading%>
-                                    </h5>
-                                </div>
+                    <div class="item item1">
+                        <div class="top">
+                            <div class="back-img"></div>
+                            <div class="sub-topic">
+                                <h5>
+                                    <%=event.heading%>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="bottom-info">
+                            <div class="info">
+                                <p class="by">By :
+                                    <%=event.postedBy%>
+                                </p>
 
                             </div>
-                            <div class="bottom-info">
-                                <div class="info">
-                                    <p class="by">By :
-                                        <%=event.postedBy%>
-                                    </p>
-
-                                </div>
-                                <div class="details-button">
-                                    <a href="">
+                            <div class="details-button">
+                                <a href="">
                                         <a href="/eventdetail/<%=event._id%>" class="button" target="_blank">Details</a>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
                         </div>
-                <%}})%>
-                <!-- <div class="item item2">
+                    </div>
+                    <%}})%>
+                        <!-- <div class="item item2">
                 <div class="top">
                     <div class="back-img"></div>
                     <div class="topic"></div>
@@ -136,37 +136,38 @@
                     </div>
                 </div>
                 </div>-->
-                <div class="after"></div>
+                        <div class="after"></div>
             </div>
             <p class="top-para">Gymkhana</p>
-
-            <% events.forEach(function(event){if(event.category==='Gymkhana'){%>
-                <div class="item item1">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="sub-topic">
-                            <h5>
-                                <%=event.heading%>
-                            </h5>
-                        </div>
-
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By :
-                                <%=event.postedBy%>
-                            </p>
+            <div class="items">
+                <% events.forEach(function(event){if(event.category==='Gymkhana'){%>
+                    <div class="item item1">
+                        <div class="top">
+                            <div class="back-img"></div>
+                            <div class="sub-topic">
+                                <h5>
+                                    <%=event.heading%>
+                                </h5>
+                            </div>
 
                         </div>
-                        <div class="details-button">
-                            <a href="">
+                        <div class="bottom-info">
+                            <div class="info">
+                                <p class="by">By :
+                                    <%=event.postedBy%>
+                                </p>
+
+                            </div>
+                            <div class="details-button">
+                                <a href="">
                                 <a href="/eventdetail/<%=event._id%>" class="button" target="_blank">Details</a>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <%}})%>
-            <div class="after"></div>
+                    <%}})%>
+                        <div class="after"></div>
+            </div>
             <!-- <div class="items items-B">
                 <div class="item item1">
                     <div class="top">
@@ -188,32 +189,34 @@
             </div> -->
 
             <p class="top-para">Clubs</p>
-            <% events.forEach(function(event){if(event.category==='Clubs'){%>
-                <div class="item item1">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="sub-topic">
-                            <h5>
-                                <%=event.heading%>
-                            </h5>
-                        </div>
-
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By :
-                                <%=event.postedBy%>
-                            </p>
+            <div class="items">
+                <% events.forEach(function(event){if(event.category==='Clubs'){%>
+                    <div class="item item1">
+                        <div class="top">
+                            <div class="back-img"></div>
+                            <div class="sub-topic">
+                                <h5>
+                                    <%=event.heading%>
+                                </h5>
+                            </div>
 
                         </div>
-                        <div class="details-button">
-                            <a href="">
+                        <div class="bottom-info">
+                            <div class="info">
+                                <p class="by">By :
+                                    <%=event.postedBy%>
+                                </p>
+
+                            </div>
+                            <div class="details-button">
+                                <a href="">
                                 <a href="/eventdetail/<%=event._id%>" class="button" target="_blank">Details</a>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <%}})%> 
+                    <%}})%>
+            </div>
             <!-- <div class="items items-C">
                 <div class="item item1">
                     <div class="top">
@@ -232,10 +235,10 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-        </section>
+    </div>
+    </section>
 
-        <!-- <div>
+    <!-- <div>
             <br /><br />
             <hr />
 
@@ -348,99 +351,99 @@
             </div>
         </div> -->
 
-        <!-- Footer -->
+    <!-- Footer -->
 
-        <footer class="footer">
-            <div class="container">
-                <div class="section_title text-center">
-                    <h1></h1>
-                </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="section_title text-center">
+                <h1></h1>
+            </div>
 
-                <!-- Footer Content -->
+            <!-- Footer Content -->
 
-                <div class="footer_content">
-                    <div class="row">
-                        <!-- Footer Column - About -->
-                        <div class="col-lg-3 footer_col">
-                            <!-- Logo -->
-                            <div class="logo_container" style="margin-top: 18px">
-                                <div class="logo">
-                                    <img src="image/icons/GSUB12.png" />
-                                    <span style="font-weight: 700; font-size: 20px">GUB</span>
-                                </div>
+            <div class="footer_content">
+                <div class="row">
+                    <!-- Footer Column - About -->
+                    <div class="col-lg-3 footer_col">
+                        <!-- Logo -->
+                        <div class="logo_container" style="margin-top: 18px">
+                            <div class="logo">
+                                <img src="image/icons/GSUB12.png" />
+                                <span style="font-weight: 700; font-size: 20px">GUB</span>
                             </div>
-                            <ul>
-                                <li class="footer_about_text">
-                                    <strong style="font-size: 2.5vh; color: ghostwhite">
+                        </div>
+                        <ul>
+                            <li class="footer_about_text">
+                                <strong style="font-size: 2.5vh; color: ghostwhite">
                     Individually,<br />
                     &nbsp; &nbsp; &nbsp; We are One Drop...<br />Together
                     <br />
                     &nbsp; &nbsp; &nbsp; We are an Ocean...</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Column - Menu -->
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_column_title"><b>NITS</b></div>
+                        <div class="footer_column_content">
+                            <ul>
+                                <li class="footer_list_item">
+                                    <a href="index.html"><b>Home</b></a>
+                                </li>
+                                <li class="footer_list_item">
+                                    <a href="Current Members(2019).html"><b>Members</b></a>
+                                </li>
+                                <li class="footer_list_item">
+                                    <a href="FEST.html"><b>Fest</b></a>
+                                </li>
+                                <li class="footer_list_item">
+                                    <a href="societies.html"><b>Societies</b></a>
+                                </li>
+                                <li class="footer_list_item">
+                                    <a href="Campus Life.html"><b>Campus Life</b></a>
                                 </li>
                             </ul>
                         </div>
+                    </div>
 
-                        <!-- Footer Column - Menu -->
+                    <!-- Footer Column - Usefull Links -->
 
-                        <div class="col-lg-3 footer_col">
-                            <div class="footer_column_title"><b>NITS</b></div>
-                            <div class="footer_column_content">
-                                <ul>
-                                    <li class="footer_list_item">
-                                        <a href="index.html"><b>Home</b></a>
-                                    </li>
-                                    <li class="footer_list_item">
-                                        <a href="Current Members(2019).html"><b>Members</b></a>
-                                    </li>
-                                    <li class="footer_list_item">
-                                        <a href="FEST.html"><b>Fest</b></a>
-                                    </li>
-                                    <li class="footer_list_item">
-                                        <a href="societies.html"><b>Societies</b></a>
-                                    </li>
-                                    <li class="footer_list_item">
-                                        <a href="Campus Life.html"><b>Campus Life</b></a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_column_title"><b>Useful Links</b></div>
+                        <div class="footer_column_content">
+                            <ul>
+                                <li class="footer_list_item">
+                                    <a href="http://18.191.249.98:3000/?fbclid=IwAR1zXNaF39tKIdAAWf3E5oHbeoo58PKQwBCdyWV9_yueuqg5-Yg4d8APh_w" target="_blank" data-toggle="tooltip" data-placement="left" title="NIT Silchar Website"><b>Resource Hub</b></a>
+                                </li>
+                                <li class="footer_list_item">
+                                    <a href="http://www.nits.ac.in/" target="_blank" data-toggle="tooltip" data-placement="left" title="NIT Silchar Website"><b>nits.ac.in</b></a>
+                                </li>
+                                <li class="footer_list_item">
+                                    <a href="http://www.tecnoesis.org/?fbclid=IwAR2GxOEyD55Vil5cTnaK1n1ihCgVxeCgms4xGoK1eo8wqH8Q1eWZHZruhb4" target="_blank" data-toggle="tooltip" data-placement="left" title="Tecnoesis"><b>tecnoesis.org</b></a>
+                                </li>
+                                <li class="footer_list_item">
+                                    <a href="https://incandobis.herokuapp.com/" target="_blank" data-toggle="tooltip" data-placement="left" title="Incandescence"><b>Incand_2020</b></a>
+                                </li>
+                                <li class="footer_list_item">
+                                    <a href="http://www.nits.ac.in/AIINIT/index.html" target="_blank" data-toggle="tooltip" data-placement="left" title="ALL INDIA INTER NIT"><b>AIINIT</b></a>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <!-- Footer Column - Usefull Links -->
+                    <!-- Footer Column - Contact -->
 
-                        <div class="col-lg-3 footer_col">
-                            <div class="footer_column_title"><b>Useful Links</b></div>
-                            <div class="footer_column_content">
-                                <ul>
-                                    <li class="footer_list_item">
-                                        <a href="http://18.191.249.98:3000/?fbclid=IwAR1zXNaF39tKIdAAWf3E5oHbeoo58PKQwBCdyWV9_yueuqg5-Yg4d8APh_w" target="_blank" data-toggle="tooltip" data-placement="left" title="NIT Silchar Website"><b>Resource Hub</b></a>
-                                    </li>
-                                    <li class="footer_list_item">
-                                        <a href="http://www.nits.ac.in/" target="_blank" data-toggle="tooltip" data-placement="left" title="NIT Silchar Website"><b>nits.ac.in</b></a>
-                                    </li>
-                                    <li class="footer_list_item">
-                                        <a href="http://www.tecnoesis.org/?fbclid=IwAR2GxOEyD55Vil5cTnaK1n1ihCgVxeCgms4xGoK1eo8wqH8Q1eWZHZruhb4" target="_blank" data-toggle="tooltip" data-placement="left" title="Tecnoesis"><b>tecnoesis.org</b></a>
-                                    </li>
-                                    <li class="footer_list_item">
-                                        <a href="https://incandobis.herokuapp.com/" target="_blank" data-toggle="tooltip" data-placement="left" title="Incandescence"><b>Incand_2020</b></a>
-                                    </li>
-                                    <li class="footer_list_item">
-                                        <a href="http://www.nits.ac.in/AIINIT/index.html" target="_blank" data-toggle="tooltip" data-placement="left" title="ALL INDIA INTER NIT"><b>AIINIT</b></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Footer Column - Contact -->
-
-                        <div class="col-lg-3 footer_col" id="contact">
-                            <div class="footer_column_title"><b>Contact Us</b></div>
-                            <div class="footer_column_content">
-                                <ul>
-                                    <li class="footer_contact_item">
-                                        <div class="footer_contact_icon">
-                                            <img src="image/icons/placeholder.svg" />
-                                        </div>
-                                        <span>
+                    <div class="col-lg-3 footer_col" id="contact">
+                        <div class="footer_column_title"><b>Contact Us</b></div>
+                        <div class="footer_column_content">
+                            <ul>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="image/icons/placeholder.svg" />
+                                    </div>
+                                    <span>
                       <strong>Gymkhana Union Body
                         <br />
                         &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; NIT
@@ -450,31 +453,31 @@
                         &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Assam-788010
                       </strong>
                     </span>
-                                    </li>
-                                    <li class="footer_contact_item">
-                                        <div class="footer_contact_icon">
-                                            <img src="image/icons/phone.png" />
-                                        </div>
-                                        +91-87892 86708
-                                    </li>
-                                    <li class="footer_contact_item">
-                                        <div class="footer_contact_icon">
-                                            <img src="image/icons/envelope.svg" />
-                                        </div>
-                                        <a href="mailto://@gymkhanaunionbodynitsilchar@gmail.com">gymkhanaunionbodynitsilchar@gmail.com</a><br /><a href="mailto://vp_gymkhana@nits.ac.in">vp_gymkhana@nits.ac.in</a>
-                                        <br /><a href="mailto://gs_gymkhana@nits.ac.in">gs_gymkhana@nits.ac.in</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                </li>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="image/icons/phone.png" />
+                                    </div>
+                                    +91-87892 86708
+                                </li>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="image/icons/envelope.svg" />
+                                    </div>
+                                    <a href="mailto://@gymkhanaunionbodynitsilchar@gmail.com">gymkhanaunionbodynitsilchar@gmail.com</a><br /><a href="mailto://vp_gymkhana@nits.ac.in">vp_gymkhana@nits.ac.in</a>
+                                    <br /><a href="mailto://gs_gymkhana@nits.ac.in">gs_gymkhana@nits.ac.in</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Footer -->
+            <!-- Footer -->
 
-                <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
-                    <div class="footer_copyright">
-                        <span>
+            <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+                <div class="footer_copyright">
+                    <span>
               <h5 style="color: ghostwhite">
                 &copy;
                 <script>
@@ -484,7 +487,7 @@
               </h5>
               <!-- <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
             </span>
-                        <span>
+                    <span>
               <ul>
                 <li>
                   <h4 style="color: ghostwhite; font-size: 15px">
@@ -502,17 +505,17 @@
                 </li>
               </ul>
             </span>
-                    </div>
-                    <div class="footer_social ml-sm-auto">
-                        <ul class="menu_social">
-                            <li class="menu_social_item">
-                                <a href="https://www.facebook.com/GymkhanaUnionBodyNitSilchar" target="_blank"><img src="image/icons/fbb.png" height="75px" width="75px" /></a>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="footer_social ml-sm-auto">
+                    <ul class="menu_social">
+                        <li class="menu_social_item">
+                            <a href="https://www.facebook.com/GymkhanaUnionBodyNitSilchar" target="_blank"><img src="image/icons/fbb.png" height="75px" width="75px" /></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
     <a class="gotopbtn" href="#"> </a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

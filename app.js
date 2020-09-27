@@ -1,9 +1,12 @@
 var express = require("express");
 var app = express();
+require('dotenv').config()
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
-const { render } = require("ejs");
+const {
+    render
+} = require("ejs");
 
 
 app.use(express.static("public"));
@@ -15,12 +18,12 @@ app.use(
 app.use(bodyParser.json());
 app.use(methodOverride("_method"));
 
-const connectDB = async ()=>{
-    await mongoose.connect('mongodb+srv://aditya2712:aditya2712@cluster0.budh1.mongodb.net/events?retryWrites=true&w=majority',{ 
+const connectDB = async() => {
+    await mongoose.connect('mongodb+srv://aditya2712:aditya2712@cluster0.budh1.mongodb.net/events?retryWrites=true&w=majority', {
         useUnifiedTopology: true,
-        useNewUrlParser: true 
+        useNewUrlParser: true
     });
-    console.log("database connected!");  
+    console.log("database connected!");
 }
 
 connectDB();
@@ -31,23 +34,35 @@ var eventSchema = new mongoose.Schema({
     postedBy: String,
     category: String,
     links: String,
-    deadline: { type: Date, default: Date.now },
-    postedOn: { type: Date, default: Date.now }
+    deadline: {
+        type: Date,
+        default: Date.now
+    },
+    postedOn: {
+        type: Date,
+        default: Date.now
+    }
 });
 
 //Create Mongoose Model
 var Event = mongoose.model("Event", eventSchema);
 
 //adminForm 
-app.get("/adminform",function(req,res){
-    res.render("adminForm.ejs");
+app.get("/eventform/:username/:password", function(req, res) {
+    if (req.params.username == "admin@GUB" && req.params.password == "12345") {
+        res.render("adminForm.ejs");
+    } else {
+        res.redirect("/");
+        console.log("Inavlid username and password");
+    }
+
 })
 
-app.post("/adminform",function(req,res){
-    var newEvent=new Event(req.body);
+app.post("/adminform", function(req, res) {
+    var newEvent = new Event(req.body);
     newEvent.save();
     // console.log(req.body);
-    res.send("Event Created!!") ;
+    res.redirect("/events");
 })
 
 //Default Routing
@@ -82,7 +97,11 @@ app.get("/members", function(req, res) {
 
 // Events Page
 app.get("/events", function(req, res) {
-    Event.find({},null, {sort: {postedOn: -1} } , function(err, allEvents) {
+    Event.find({}, null, {
+        sort: {
+            postedOn: -1
+        }
+    }, function(err, allEvents) {
         if (err) {
             console.log(err);
         } else {
@@ -115,16 +134,17 @@ app.get("/societies", function(req, res) {
 
 //Event Details page
 let documentId;
-app.get("/eventdetail/:id",function(req,res){
-    documentId=req.params.id;
+app.get("/eventdetail/:id", function(req, res) {
+    documentId = req.params.id;
     res.redirect("/eventdetail")
 })
-app.get("/eventdetail",function(req, res){
-    Event.findOne( {_id:documentId} ,(err,event) => {
-        if(err){
+app.get("/eventdetail", function(req, res) {
+    Event.findOne({
+        _id: documentId
+    }, (err, event) => {
+        if (err) {
             console.log(err);
-        }
-        else{
+        } else {
             res.render("eventDetail.ejs", {
                 event: event
             })
