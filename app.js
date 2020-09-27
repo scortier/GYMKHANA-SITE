@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+require('dotenv').config()
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
@@ -47,15 +48,21 @@ var eventSchema = new mongoose.Schema({
 var Event = mongoose.model("Event", eventSchema);
 
 //adminForm 
-app.get("/adminform", function(req, res) {
-    res.render("adminForm.ejs");
+app.get("/eventform/:username/:password", function(req, res) {
+    if (req.params.username == "admin@GUB" && req.params.password == "12345") {
+        res.render("adminForm.ejs");
+    } else {
+        res.redirect("/");
+        console.log("Inavlid username and password");
+    }
+
 })
 
 app.post("/adminform", function(req, res) {
     var newEvent = new Event(req.body);
     newEvent.save();
     // console.log(req.body);
-    res.send("Event Created!!");
+    res.redirect("/events");
 })
 
 //Default Routing
