@@ -3,6 +3,9 @@ var app = express();
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+const {
+    render
+} = require("ejs");
 
 
 app.use(express.static("public"));
@@ -14,21 +17,46 @@ app.use(
 app.use(bodyParser.json());
 app.use(methodOverride("_method"));
 
-mongoose.connect("mongodb://localhost/db_GUB", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+const connectDB = async() => {
+    await mongoose.connect('mongodb+srv://aditya2712:aditya2712@cluster0.budh1.mongodb.net/events?retryWrites=true&w=majority', {
+        useUnifiedTopology: true,
+        useNewUrlParser: true
+    });
+    console.log("database connected!");
+}
+
+connectDB();
+
 var eventSchema = new mongoose.Schema({
-    title: String,
-    body: String,
-    deadline: String,
-    author: String,
-    category: String
+    heading: String,
+    details: String,
+    postedBy: String,
+    category: String,
+    links: String,
+    deadline: {
+        type: Date,
+        default: Date.now
+    },
+    postedOn: {
+        type: Date,
+        default: Date.now
+    }
 });
 
 //Create Mongoose Model
 var Event = mongoose.model("Event", eventSchema);
 
+//adminForm 
+app.get("/adminform", function(req, res) {
+    res.render("adminForm.ejs");
+})
+
+app.post("/adminform", function(req, res) {
+    var newEvent = new Event(req.body);
+    newEvent.save();
+    // console.log(req.body);
+    res.send("Event Created!!");
+})
 
 //Default Routing
 app.get("/", function(req, res) {
@@ -60,9 +88,13 @@ app.get("/members", function(req, res) {
     res.render("Current_Members(2019).ejs");
 });
 
-//Events Page
+// Events Page
 app.get("/events", function(req, res) {
-    Event.find({}, function(err, allEvents) {
+    Event.find({}, null, {
+        sort: {
+            postedOn: -1
+        }
+    }, function(err, allEvents) {
         if (err) {
             console.log(err);
         } else {
@@ -93,36 +125,25 @@ app.get("/societies", function(req, res) {
     res.render("societies.ejs");
 });
 
-//Adding event Page
-app.get("/nits/GUB/eventForm", function(req, res) {
-    res.render("adminForm.ejs");
-});
-
-//Post new event
-app.post("/events", function(req, res) {
-    var title = req.body.title;
-    var body = req.body.body;
-    var deadline = req.body.deadline;
-    var author = req.body.author;
-    var category = req.body.category;
-    var newEvent = {
-        title: title,
-        body: body,
-        deadline: deadline,
-        author: author,
-        category: category
-    };
-    console.log(newEvent);
-    //Create a new campground and save to DB
-    Event.create(newEvent, function(err, newlyCreated) {
+//Event Details page
+let documentId;
+app.get("/eventdetail/:id", function(req, res) {
+    documentId = req.params.id;
+    res.redirect("/eventdetail")
+})
+app.get("/eventdetail", function(req, res) {
+    Event.findOne({
+        _id: documentId
+    }, (err, event) => {
         if (err) {
             console.log(err);
         } else {
-            //redirect to campgrounds
-            res.redirect("/events");
+            res.render("eventDetail.ejs", {
+                event: event
+            })
         }
     })
-});
+})
 
 //########################################################
 

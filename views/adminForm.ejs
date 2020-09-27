@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/adminForm.css">
-    <link rel="stylesheet" type="text/css" href="styles/diamonds.css">
+    <link rel="stylesheet" href="styles/adminForm.css">
     <title>Admin Form</title>
     <style>
         html {
@@ -124,25 +123,38 @@
 <body>
     <div class="banner">
         <div class="banner-inner container">
-            <img src="../public/image/icons/GSUB12.png">
+            <img src="image/icons/GSUB12.png">
             <h1>Admin Form</h1>
         </div>
     </div>
     <div class="lower-pannel">
-        <form action="/events" method="POST">
-            <label for="heading">Heading -</label><br>
-            <input type="text" name="title" placeholder="Heading..."><br>
-            <label for="postedBy">Posted By -</label><br>
-            <input type="text" name="author" placeholder="Posted By..."><br>
-            <label for="deadline">Deadline -</label><br>
-            <input type="date" name="deadline">
-            <br>
-            <label for="details">Details</label><br>
-            <!-- <input type="text" name="details" class="detailsInput" placeholder="Details..."><br> -->
-            <input class="textarea" role="textbox" contenteditable name="body"></input>
+        <<<<<<< HEAD <form action="/events" method="POST">
+            =======
+            <form action="/adminform" method="POST">
+                <label for="category">Category -</label><br>
+                <select name="category">
+                <option value="Administration" selected>Administration</option>
+                <option value="Gymkhana">Gymkhana</option>
+                <option value="Clubs">Clubs</option>
+            </select><br> >>>>>>> d34de0114ac058a74c52379c1bb8a29861f66f0f
+                <label for="heading">Heading -</label><br>
+                <input type="text" name="title" placeholder="Heading..."><br>
+                <label for="postedBy">Posted By -</label><br>
+                <input type="text" name="author" placeholder="Posted By..."><br>
+                <label for="deadline">Deadline -</label><br>
+                <input type="date" name="deadline">
+                <br>
+                <label for="details">Details</label><br>
+                <<<<<<< HEAD <!-- <input type="text" name="details" class="detailsInput" placeholder="Details..."><br> -->
+                    <input class="textarea" role="textbox" contenteditable name="body"></input>
 
-            <button>Submit</button>
-        </form>
+                    =======
+                    <input type="text" name="details" class="detialsInput" placeholder="Details..."><br>
+                    <!-- <span name="details" class="textarea" role="textbox" contenteditable></span> -->
+                    <label for="links">Links & Google Doc</label><br>
+                    <input type="url" name="links" placeholder="Links..."><br> >>>>>>> d34de0114ac058a74c52379c1bb8a29861f66f0f
+                    <button>Submit</button>
+            </form>
     </div>
 </body>
 

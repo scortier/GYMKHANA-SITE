@@ -47,7 +47,7 @@ label{
     font-family: century gothic;
     font-size: 20px;
 }
-input{
+input,select{
     background-color: rgb(235, 230, 230);
     font-family: century gothic;
     text-decoration: none;
@@ -61,13 +61,16 @@ input{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-/* .detailsInput{
+select{
+    width: 20%;
+}
+.detailsInput{
     padding: 0px;
     overflow: hidden;
+    /* min-width: 100px; */
+    min-height: 50px;
     resize: vertical;
-    min-width: 500px;
-    min-height: 500px;
-} */
+}
 .textarea{
     font-family: century gothic;
     text-decoration: none;

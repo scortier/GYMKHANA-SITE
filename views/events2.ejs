@@ -93,121 +93,81 @@
             <p class="top-para">Administration</p>
             <div class="items">
                 <!-- <div class="before"></div> -->
-                <% events.forEach(function(event){%>
-                    <div class="item item1">
-                        <div class="top">
-                            <div class="back-img"></div>
-                            <div class="sub-topic">
-                                <h5>
-                                    <%=event.title%>
-                                </h5>
-                            </div>
-
-                        </div>
-                        <div class="bottom-info">
-                            <div class="info">
-                                <p class="by">By :
-                                    <%=event.author%>
-                                </p>
+                <% events.forEach(function(event){if(event.category==='Administration'){%>
+                        <div class="item item1">
+                            <div class="top">
+                                <div class="back-img"></div>
+                                <div class="sub-topic">
+                                    <h5>
+                                        <%=event.heading%>
+                                    </h5>
+                                </div>
 
                             </div>
-                            <div class="details-button">
-                                <a href="">
-                                    <a href="#" class="button">Details</a>
-                                </a>
+                            <div class="bottom-info">
+                                <div class="info">
+                                    <p class="by">By :
+                                        <%=event.postedBy%>
+                                    </p>
+
+                                </div>
+                                <div class="details-button">
+                                    <a href="">
+                                        <a href="/eventdetail/<%=event._id%>" class="button" target="_blank">Details</a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                <%}})%>
+                <!-- <div class="item item2">
+                <div class="top">
+                    <div class="back-img"></div>
+                    <div class="topic"></div>
+                </div>
+                <div class="bottom-info">
+                    <div class="info">
+                    <p class="by">By : John Doe</p>
+                    <p class="post-date">Posted : 20/9</p>
                     </div>
-                    <%})%>
-                        <!-- <div class="item item2">
-          <div class="top">
-            <div class="back-img"></div>
-            <div class="topic"></div>
-          </div>
-          <div class="bottom-info">
-            <div class="info">
-              <p class="by">By : John Doe</p>
-              <p class="post-date">Posted : 20/9</p>
-            </div>
-            <div class="details-button">
-              <a href="">
-                <h4 class="button">Details</h4>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="item item3">
-          <div class="top">
-            <div class="back-img"></div>
-            <div class="topic"></div>
-          </div>
-          <div class="bottom-info">
-            <div class="info">
-              <p class="by">By : John Doe</p>
-              <p class="post-date">Posted : 20/9</p>
-            </div>
-            <div class="details-button">
-              <a href="">
-                <h4 class="button">Details</h4>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="item item4">
-          <div class="top">
-            <div class="back-img"></div>
-            <div class="topic"></div>
-          </div>
-          <div class="bottom-info">
-            <div class="info">
-              <p class="by">By : John Doe</p>
-              <p class="post-date">Posted : 20/9</p>
-            </div>
-            <div class="details-button">
-              <a href="">
-                <h4 class="button">Details</h4>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="item item5">
-          <div class="top">
-            <div class="back-img"></div>
-            <div class="topic"></div>
-          </div>
-          <div class="bottom-info">
-            <div class="info">
-              <p class="by">By : John Doe</p>
-              <p class="post-date">Posted : 20/9</p>
-            </div>
-            <div class="details-button">
-              <a href="">
-                <h4 class="button">Details</h4>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="item item6">
-          <div class="top">
-            <div class="back-img"></div>
-            <div class="topic"></div>
-          </div>
-          <div class="bottom-info">
-            <div class="info">
-              <p class="by">By : John Doe</p>
-              <p class="post-date">Posted : 20/9</p>
-            </div>
-            <div class="details-button">
-              <a href="">
-                <h4 class="button">Details</h4>
-              </a>
-            </div>
-          </div>
-        </div> -->
-                        <div class="after"></div>
+                    <div class="details-button">
+                    <a href="">
+                        <h4 class="button">Details</h4>
+                    </a>
+                    </div>
+                </div>
+                </div>-->
+                <div class="after"></div>
             </div>
             <p class="top-para">Gymkhana</p>
-            <div class="items items-B">
+
+            <% events.forEach(function(event){if(event.category==='Gymkhana'){%>
+                <div class="item item1">
+                    <div class="top">
+                        <div class="back-img"></div>
+                        <div class="sub-topic">
+                            <h5>
+                                <%=event.heading%>
+                            </h5>
+                        </div>
+
+                    </div>
+                    <div class="bottom-info">
+                        <div class="info">
+                            <p class="by">By :
+                                <%=event.postedBy%>
+                            </p>
+
+                        </div>
+                        <div class="details-button">
+                            <a href="">
+                                <a href="/eventdetail/<%=event._id%>" class="button" target="_blank">Details</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <%}})%>
+            <div class="after"></div>
+            <!-- <div class="items items-B">
                 <div class="item item1">
                     <div class="top">
                         <div class="back-img"></div>
@@ -225,60 +185,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="item item2">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="topic"></div>
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By : John Doe</p>
-                            <p class="post-date">Posted : 20/9</p>
-                        </div>
-                        <div class="details-button">
-                            <a href="">
-                                <h4 class="button">Details</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item3">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="topic"></div>
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By : John Doe</p>
-                            <p class="post-date">Posted : 20/9</p>
-                        </div>
-                        <div class="details-button">
-                            <a href="">
-                                <h4 class="button">Details</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item4">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="topic"></div>
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By : John Doe</p>
-                            <p class="post-date">Posted : 20/9</p>
-                        </div>
-                        <div class="details-button">
-                            <a href="">
-                                <h4 class="button">Details</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> -->
+
             <p class="top-para">Clubs</p>
-            <div class="items items-C">
+            <% events.forEach(function(event){if(event.category==='Clubs'){%>
+                <div class="item item1">
+                    <div class="top">
+                        <div class="back-img"></div>
+                        <div class="sub-topic">
+                            <h5>
+                                <%=event.heading%>
+                            </h5>
+                        </div>
+
+                    </div>
+                    <div class="bottom-info">
+                        <div class="info">
+                            <p class="by">By :
+                                <%=event.postedBy%>
+                            </p>
+
+                        </div>
+                        <div class="details-button">
+                            <a href="">
+                                <a href="/eventdetail/<%=event._id%>" class="button" target="_blank">Details</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <%}})%> 
+            <!-- <div class="items items-C">
                 <div class="item item1">
                     <div class="top">
                         <div class="back-img"></div>
@@ -295,92 +231,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="item item2">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="topic"></div>
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By : John Doe</p>
-                            <p class="post-date">Posted : 20/9</p>
-                        </div>
-                        <div class="details-button">
-                            <a href="">
-                                <h4 class="button">Details</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item3">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="topic"></div>
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By : John Doe</p>
-                            <p class="post-date">Posted : 20/9</p>
-                        </div>
-                        <div class="details-button">
-                            <a href="">
-                                <h4 class="button">Details</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item4">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="topic"></div>
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By : John Doe</p>
-                            <p class="post-date">Posted : 20/9</p>
-                        </div>
-                        <div class="details-button">
-                            <a href="">
-                                <h4 class="button">Details</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item5">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="topic"></div>
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By : John Doe</p>
-                            <p class="post-date">Posted : 20/9</p>
-                        </div>
-                        <div class="details-button">
-                            <a href="">
-                                <h4 class="button">Details</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item item6">
-                    <div class="top">
-                        <div class="back-img"></div>
-                        <div class="topic"></div>
-                    </div>
-                    <div class="bottom-info">
-                        <div class="info">
-                            <p class="by">By : John Doe</p>
-                            <p class="post-date">Posted : 20/9</p>
-                        </div>
-                        <div class="details-button">
-                            <a href="">
-                                <h4 class="button">Details</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </section>
 

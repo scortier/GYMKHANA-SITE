@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Course Project" />
     <link rel="icon" href="./image/icons/GSUB12.png" />
@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
     <link rel="stylesheet" href="styles/scroll.css" />
-    <link rel="stylesheet" href="styles/eventDetail.css">
+    <link rel="stylesheet" href="styles/eventDetail.css" type=text/css>
     <title>GUB, NIT Silchar</title>
 </head>
 
@@ -79,7 +79,7 @@
         <div class="banner">
             <div class="banner-inner container">
                 <a href="events2.html" class="back"><i class="fas fa-long-arrow-alt-left"></i> back</a>
-                <h1>Important Notice</h1>
+                <h1><%=event.heading%></h1>
             </div>
         </div>
 
@@ -90,7 +90,7 @@
                     <div class="image-1"><img src="./image/icons/GSUB12.png" alt=""></div>
                     <div class="form-link">
                         <h2>Google Doc</h2>
-                        <a href="#">https://docs.google.com/forms/d/0e1FA/nvaweGIdsfW</a>
+                        <a href="<%=event.links%>"><%=event.links%></a>
                     </div>
                     <div class="footer_social ml-sm-auto">
                         <ul class="menu_social">
@@ -104,22 +104,21 @@
             <div class="right-col">
                 <div class="right-card">
                     <div class="publisher">
-                        <img src="./image/mem/aman19.jpg" alt="">
-                        <span>Lorem ipsum </span>
-                        <div>Posted On: 20/09/20 9:00 pm</div>
+                        <img src="./image/icons/defaultProfile.png" alt="">
+                        <span><%= event.postedBy %></span>
+                        <div>Posted On: <%=event.postedOn.toDateString()%></div>
                     </div>
-                    <div class="deadline">Deadline: <span>02/10/20 2:00 pm</span>
-                        <div class="timeLeft"> Time Left: <span id="timer"></span> </div>
+                    <div class="deadline">Deadline: <span><%= event.deadline.toUTCString()%></span>
+                        <!-- <div class="deadline">Deadline: <span><span> -->
+                        <!-- <div class="timeLeft"> Time Left: <span id="timer"></span> </div> -->
                     </div>
 
                     <div class="details">
                         <h3 style="font-weight: 600;">Details :</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita officia odio mollitia eveniet tempore amet veniam maiores, dolorem quos? Possimus quis, repudiandae nostrum assumenda nisi ullam at alias quod placeat? Ea ab nam
-                            vero. Labore a nobis ad repellendus in necessitatibus officia voluptatum eaque quo deleniti, veniam, velit, id obcaecati.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita officia odio mollitia eveniet tempore amet veniam maiores, dolorem quos? Possimus quis, repudiandae nostrum assumenda nisi ullam at alias quod placeat? Ea ab nam
-                            vero. Labore a nobis ad repellendus in necessitatibus officia voluptatum eaque quo deleniti, veniam, velit, id obcaecati.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita officia odio mollitia eveniet tempore amet veniam maiores, dolorem quos? Possimus quis, repudiandae nostrum assumenda nisi ullam at alias quod placeat? Ea ab nam
-                            vero. Labore a nobis ad repellendus in necessitatibus officia voluptatum eaque quo deleniti, veniam, velit, id obcaecati.</p>
+                        <p><%= event.details %></p>
+                        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita officia odio mollitia eveniet tempore amet veniam maiores, dolorem quos? Possimus quis, repudiandae nostrum assumenda nisi ullam at alias quod placeat? Ea ab nam
+                            vero. Labore a nobis ad repellendus in necessitatibus officia voluptatum eaque quo deleniti, veniam, velit, id obcaecati.</p> -->
+                            <p style="color: whitesmoke;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita officia Lorem ipsum dolor sit amet. quo!</p>
                     </div>
                 </div>
             </div>
