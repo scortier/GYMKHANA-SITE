@@ -1,6 +1,5 @@
 var express = require("express");
 var app = express();
-require('dotenv').config()
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
@@ -8,7 +7,7 @@ const {
     render
 } = require("ejs");
 
-
+require('dotenv').config()
 app.use(express.static("public"));
 app.use(
     bodyParser.urlencoded({
@@ -19,7 +18,8 @@ app.use(bodyParser.json());
 app.use(methodOverride("_method"));
 
 const connectDB = async() => {
-    await mongoose.connect('mongodb+srv://aditya2712:aditya2712@cluster0.budh1.mongodb.net/events?retryWrites=true&w=majority', {
+    // console.log(process.env.DB);
+    await mongoose.connect(process.env.DB, {
         useUnifiedTopology: true,
         useNewUrlParser: true
     });
@@ -49,7 +49,7 @@ var Event = mongoose.model("Event", eventSchema);
 
 //adminForm 
 app.get("/eventform/:username/:password", function(req, res) {
-    if (req.params.username == "admin@GUB" && req.params.password == "12345") {
+    if (req.params.username === process.env.USER && req.params.password === process.env.PASS) {
         res.render("adminForm.ejs");
     } else {
         res.redirect("/");
