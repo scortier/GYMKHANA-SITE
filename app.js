@@ -3,6 +3,7 @@ var app = express();
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+const { render } = require("ejs");
 
 
 app.use(express.static("public"));
@@ -30,7 +31,8 @@ var eventSchema = new mongoose.Schema({
     postedBy: String,
     category: String,
     links: String,
-    deadline: { type: Date, default: Date.now }
+    deadline: { type: Date, default: Date.now },
+    postedOn: { type: Date, default: Date.now }
 });
 
 //Create Mongoose Model
@@ -44,7 +46,7 @@ app.get("/adminform",function(req,res){
 app.post("/adminform",function(req,res){
     var newEvent=new Event(req.body);
     newEvent.save();
-    console.log(req.body);
+    // console.log(req.body);
     res.send("Event Created!!") ;
 })
 
@@ -80,7 +82,7 @@ app.get("/members", function(req, res) {
 
 // Events Page
 app.get("/events", function(req, res) {
-    Event.find({}, function(err, allEvents) {
+    Event.find({},null, {sort: {postedOn: -1} } , function(err, allEvents) {
         if (err) {
             console.log(err);
         } else {
@@ -111,31 +113,24 @@ app.get("/societies", function(req, res) {
     res.render("societies.ejs");
 });
 
-//Post new event
-// app.post("/events", function(req, res) {
-//     var title = req.body.title;
-//     var body = req.body.body;
-//     var deadline = req.body.deadline;
-//     var author = req.body.author;
-//     var category = req.body.category;
-//     var newEvent = {
-//         title: title,
-//         body: body,
-//         deadline: deadline,
-//         author: author,
-//         category: category
-//     };
-//     console.log(newEvent);
-//     //Create a new campground and save to DB
-//     Event.create(newEvent, function(err, newlyCreated) {
-//         if (err) {
-//             console.log(err);
-//         } else {
-//             //redirect to campgrounds
-//             res.redirect("/events");
-//         }
-//     })
-// });
+//Event Details page
+let documentId;
+app.get("/eventdetail/:id",function(req,res){
+    documentId=req.params.id;
+    res.redirect("/eventdetail")
+})
+app.get("/eventdetail",function(req, res){
+    Event.findOne( {_id:documentId} ,(err,event) => {
+        if(err){
+            console.log(err);
+        }
+        else{
+            res.render("eventDetail.ejs", {
+                event: event
+            })
+        }
+    })
+})
 
 //########################################################
 
