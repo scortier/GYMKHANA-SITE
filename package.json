@@ -1,0 +1,31 @@
+{
+  "name": "gymkhana-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aditya2712/GYMKHANA-SITE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aditya2712/GYMKHANA-SITE/issues"
+  },
+  "homepage": "https://github.com/aditya2712/GYMKHANA-SITE#readme"
+}
