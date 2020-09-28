@@ -3,7 +3,6 @@ html{
     margin: 0px;
 }
 img{
-    position: absolute;
     top: 50px;
     left: 100px;
     width: 200px;
@@ -17,13 +16,13 @@ body{
     background: radial-gradient(#4B4B4B, #0B1113);
 }
 .banner-inner{
-    padding-top: 20vh;
+    padding-top: 2vh;
     text-align: center;
 }
 .banner-inner h1{
-    display: inline;    
+    display: block;    
     color:#FFB606;
-    margin: 0px;
+    margin-left: 39vw;
     font-size: 50px;
     letter-spacing: 5px;
     font-weight: 600;
@@ -31,7 +30,16 @@ body{
     background: rgba(196, 196, 196, 0.25);
     border-radius: 20px;
     padding: 15px;
+    width: 20%;
 }
+.logo{
+
+}
+
+.heading{
+
+}
+
 .lower-pannel{
     /* background: linear-gradient(180deg, #696969 -0.92%, #0B1113 46.91%); */
     background-color: rgb(97, 92, 92);
@@ -99,4 +107,33 @@ button{
     background-color:  rgb(235, 230, 230);
     margin-left: 650px;
     margin-top: 30px;
+}
+
+@media screen and (max-width:1750px)
+{
+    .banner{
+        height: 45vh;;
+    }
+    .banner-inner{
+        padding-top: 20px;
+    }
+    .banner-inner h1{
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90vw;
+    }
+    select{
+        width: 100%;
+    }
+    .lower-pannel{
+        padding-left: 10px;
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        display: grid;
+        margin:auto;
+    }
 }
