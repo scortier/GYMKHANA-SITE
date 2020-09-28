@@ -375,7 +375,11 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 /*********************************
 7. Page Section
 *********************************/
-
+/* Main body */
+.stt{
+	margin-left: 30px;
+    margin-right: 30px;
+}
 .page_section
 {
 	padding-top: 117px;
