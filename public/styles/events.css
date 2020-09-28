@@ -156,13 +156,13 @@ body {
 }
 
 .sub-topic {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 20px;
 }
 
 .sub-topic > h5 {
   color: rgba(251, 250, 250, 0.883);
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 .topic > h4 {
@@ -237,7 +237,7 @@ body {
   border-radius: 10px;
   z-index: 5;
   bottom: 120px;
-  background: rgb(0, 234, 255);
+  background: #294f91c7;
 }
 
 .button {
