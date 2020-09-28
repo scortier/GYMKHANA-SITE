@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/adminForm.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/adminForm.css" />
     <title>Admin Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="banner">
-        <div class="banner-inner container">
-            <img src="/image/icons/GSUB12.png">
-            <h1>Admin Form</h1>
-        </div>
+      <div class="banner-inner container">
+        <img class="logo" src="/image/icons/GSUB12.png" />
+        <h1 class="heading">Admin Form</h1>
+      </div>
     </div>
     <div class="lower-pannel">
-        <form action="/adminform" method="POST">
-            <label for="category">Category -</label><br>
-            <select name="category">
-                <option value="Administration" selected>Administration</option>
-                <option value="Gymkhana">Gymkhana</option>
-                <option value="Clubs">Clubs</option>
-            </select><br>
-            <label for="heading">Heading -</label><br>
-            <input type="text" name="heading" placeholder="Heading..."><br>
-            <label for="postedBy">Posted By -</label><br>
-            <input type="text" name="postedBy" placeholder="Posted By..."><br>
-            <label for="deadline">Deadline -</label><br>
-            <input type="date" name="deadline">
-            <input type="time" name="deadline"><br>
-            <label for="details">Details</label><br>
-            <input type="text" name="details" class="detialsInput" placeholder="Details..."><br>
-            <!-- <span name="details" class="textarea" role="textbox" contenteditable></span> -->
-            <label for="links">Links & Google Doc</label><br>
-            <input type="url" name="links" placeholder="Links..."><br>
-            <button>Submit</button>
-        </form>
+      <form action="/adminform" method="POST">
+        <label for="category">Category -</label><br />
+        <select name="category">
+          <option value="Administration" selected>Administration</option>
+          <option value="Gymkhana">Gymkhana</option>
+          <option value="Clubs">Clubs</option></select
+        ><br />
+        <label for="heading">Heading -</label><br />
+        <input type="text" name="heading" placeholder="Heading..." /><br />
+        <label for="postedBy">Posted By -</label><br />
+        <input type="text" name="postedBy" placeholder="Posted By..." /><br />
+        <label for="deadline">Deadline -</label><br />
+        <input type="date" name="deadline" />
+        <input type="time" name="deadline" /><br />
+        <label for="details">Details</label><br />
+        <div class="detailsInput">
+          <input
+            type="text"
+            style="
+                overflow: hidden;
+                /* min-width: 100px; */
+                min-height: 200px;
+                resize: vertical;"
+            name="details"
+            placeholder="Details..."
+          /><br />
+        </div>
+        <!-- <span name="details" class="textarea" role="textbox" contenteditable></span> -->
+        <label for="links">Links & Google Doc</label><br />
+        <input type="url" name="links" placeholder="Links..." /><br />
+        <button>Submit</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>
