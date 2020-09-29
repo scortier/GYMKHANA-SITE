@@ -103,18 +103,18 @@ body {
 }
 
 .item1 {
-  background-image: url("../image/events/1.jpg");
-  background-size: cover;
+  background-image: url("../image/events/admin.jpeg");
+  background-size: contain;
 }
 
 .item2 {
-  background-image: url("../image/events/2.jpg");
-  background-size: cover;
+  background-image: url("../image/events/gymkhana.jpeg");
+  background-size: contain;
 }
 
 .item3 {
-  background-image: url("../image/events/3.jpg");
-  background-size: cover;
+  background-image: url("../image/events/clubs.jpeg");
+  background-size: contain;
 }
 
 .item4 {
