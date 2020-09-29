@@ -3,6 +3,7 @@ var app = express();
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+var ObjectId=require("mongodb").ObjectID;
 const {
     render
 } = require("ejs");
@@ -151,7 +152,40 @@ app.get("/eventdetail", function(req, res) {
         }
     })
 })
-
+//all events to delete
+app.get("/eventdelete/:username/:password", function(req, res) {
+    if (req.params.username === process.env.USER && req.params.password === process.env.PASS) {
+        res.redirect("/6aecd76hb972aic8561aic936wps123abc2712GUB");
+    } else {
+        res.redirect("/");
+        console.log("Inavlid username and password");
+    }
+})
+app.get("/6aecd76hb972aic8561aic936wps123abc2712GUB", function(req, res) {
+    Event.find({}, null, {
+        sort: {
+            postedOn: -1
+        }
+    }, function(err, allEvents) {
+        if (err) {
+            console.log(err);
+        } else {
+            res.render("eventdelete.ejs", {
+                events: allEvents
+            });
+        }
+    })
+});
+app.get("/eventdelete/:id",function(req,res){
+    Event.findByIdAndDelete(req.params.id,function(err){
+        if(err){
+            console.log(err);
+        }
+        else{
+            res.redirect("/6aecd76hb972aic8561aic936wps123abc2712GUB");
+        }
+    })
+})
 //########################################################
 
 app.listen(process.env.PORT || 3000, function() {
