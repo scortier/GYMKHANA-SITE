@@ -1,0 +1,144 @@
+html{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 200px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.banner{
+    height: 40vh;
+    background: radial-gradient(#4B4B4B, #0B1113);
+}
+.banner-inner{
+    padding-top: 20vh;
+    text-align: center;
+}
+.banner-inner h1{
+    display: inline;    
+    color:#FFB606;
+    margin: 0px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    font-family: century gothic;
+    background: rgba(196, 196, 196, 0.25);
+    border-radius: 20px;
+    padding: 15px;
+}
+.lower-pannel{
+    /* background: linear-gradient(180deg, #696969 -0.92%, #0B1113 46.91%); */
+    background-color: rgb(97, 92, 92);
+    padding: 50px;
+    padding-left: 80px;
+}
+form{
+    width: 100%;
+}
+label{
+    color: white;
+    font-weight: 400;
+    font-family: century gothic;
+    font-size: 20px;
+}
+input,select{
+    background-color: rgb(235, 230, 230);
+    font-family: century gothic;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-bottom:3px solid #FFB606;
+    border-radius: 2px;
+    width: 30%;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+textarea{
+    font-family: century gothic;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    display: block;
+    width: 70%;
+    background-color: rgb(235, 230, 230);
+    overflow: hidden;
+    resize: both;
+    min-height: 200px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom:3px solid #FFB606;
+    border-radius: 2px;
+}
+.detailinput{
+    display: none;
+}
+button{
+    outline: none;
+    text-decoration: none;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: larger;
+    background-color:  rgb(235, 230, 230);
+    margin-left: 40vw;
+    margin-top: 30px;
+}
+@media screen and (max-width: 1100px){
+    button{
+        margin-left: 30vw;
+        font-size: x-large;
+    }
+    input,select{
+        width: 80%;
+        font-size: x-large;
+    }
+    img{
+        width: 100px;
+    }
+    label{
+        font-size: x-large;
+    }
+    textarea{
+        font-size: larger;
+    }
+}
+@media screen and (max-width: 770px){
+    img{
+        top: 20px;
+        left: 20px;
+    }
+}
+@media screen and (max-width: 570px){
+    img{
+        width: 70px;
+    }
+    .banner-inner h1{
+        font-size: xx-large;
+    }
+    .lower-pannel{
+        padding-left: 30px ;
+    }
+    label{
+        font-size: large;
+    }
+    input,select{
+        font-size: large;
+    }
+    textarea{
+        font-size: large;
+    }
+    button{
+        margin-left: 27vw;
+        font-size: large;
+    }
+}
