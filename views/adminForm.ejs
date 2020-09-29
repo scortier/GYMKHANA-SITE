@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/./image/icons/GSUB12.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/adminForm.css" />
     <title>Admin Form</title>
@@ -29,23 +30,19 @@
         <input type="date" name="deadline" />
         <input type="time" name="deadline" /><br />
         <label for="details">Details</label><br />
-        <div class="detailsInput">
-          <input
-            type="text"
-            style="
-                overflow: hidden;
-                /* min-width: 100px; */
-                min-height: 200px;
-                resize: vertical;"
-            name="details"
-            placeholder="Details..."
-          /><br />
-        </div>
-        <!-- <span name="details" class="textarea" role="textbox" contenteditable></span> -->
+        <input id="detailinput" class="detailinput" type="text" name="details">
+        <textarea id="textarea" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         <label for="links">Links & Google Doc</label><br />
         <input type="url" name="links" placeholder="Links..." /><br />
-        <button>Submit</button>
+        <button onclick="inputDetail()">Submit</button>
       </form>
     </div>
+    <script>
+      const inputDetail= () => {
+        const textarea=document.getElementById("textarea");
+        const detailsinput=document.getElementById("detailinput");
+        detailsinput.value=textarea.value;
+      }
+    </script>
   </body>
 </html>

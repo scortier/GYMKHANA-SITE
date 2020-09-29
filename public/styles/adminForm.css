@@ -3,6 +3,7 @@ html{
     margin: 0px;
 }
 img{
+    position: absolute;
     top: 50px;
     left: 100px;
     width: 200px;
@@ -16,13 +17,13 @@ body{
     background: radial-gradient(#4B4B4B, #0B1113);
 }
 .banner-inner{
-    padding-top: 2vh;
+    padding-top: 20vh;
     text-align: center;
 }
 .banner-inner h1{
-    display: block;    
+    display: inline;    
     color:#FFB606;
-    margin-left: 39vw;
+    margin: 0px;
     font-size: 50px;
     letter-spacing: 5px;
     font-weight: 600;
@@ -30,16 +31,7 @@ body{
     background: rgba(196, 196, 196, 0.25);
     border-radius: 20px;
     padding: 15px;
-    width: 20%;
 }
-.logo{
-
-}
-
-.heading{
-
-}
-
 .lower-pannel{
     /* background: linear-gradient(180deg, #696969 -0.92%, #0B1113 46.91%); */
     background-color: rgb(97, 92, 92);
@@ -69,17 +61,7 @@ input,select{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-select{
-    width: 20%;
-}
-.detailsInput{
-    padding: 0px;
-    overflow: hidden;
-    /* min-width: 100px; */
-    min-height: 50px;
-    resize: vertical;
-}
-.textarea{
+textarea{
     font-family: century gothic;
     text-decoration: none;
     border: none;
@@ -97,6 +79,9 @@ select{
     border-bottom:3px solid #FFB606;
     border-radius: 2px;
 }
+.detailinput{
+    display: none;
+}
 button{
     outline: none;
     text-decoration: none;
@@ -105,35 +90,55 @@ button{
     border-radius: 30px;
     font-size: larger;
     background-color:  rgb(235, 230, 230);
-    margin-left: 650px;
+    margin-left: 40vw;
     margin-top: 30px;
 }
-
-@media screen and (max-width:1750px)
-{
-    .banner{
-        height: 45vh;;
+@media screen and (max-width: 1100px){
+    button{
+        margin-left: 30vw;
+        font-size: x-large;
     }
-    .banner-inner{
-        padding-top: 20px;
+    input,select{
+        width: 80%;
+        font-size: x-large;
+    }
+    img{
+        width: 100px;
+    }
+    label{
+        font-size: x-large;
+    }
+    textarea{
+        font-size: larger;
+    }
+}
+@media screen and (max-width: 770px){
+    img{
+        top: 20px;
+        left: 20px;
+    }
+}
+@media screen and (max-width: 570px){
+    img{
+        width: 70px;
     }
     .banner-inner h1{
-        display: block;
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 90vw;
-    }
-    select{
-        width: 100%;
+        font-size: xx-large;
     }
     .lower-pannel{
-        padding-left: 10px;
+        padding-left: 30px ;
     }
-    input{
-        width: 100%;
+    label{
+        font-size: large;
+    }
+    input,select{
+        font-size: large;
+    }
+    textarea{
+        font-size: large;
     }
     button{
-        display: grid;
-        margin:auto;
+        margin-left: 27vw;
+        font-size: large;
     }
 }
