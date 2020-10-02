@@ -3,7 +3,7 @@ var app = express();
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
-var ObjectId=require("mongodb").ObjectID;
+var ObjectId = require("mongodb").ObjectID;
 const {
     render
 } = require("ejs");
@@ -20,7 +20,7 @@ app.use(methodOverride("_method"));
 
 const connectDB = async() => {
     // console.log(process.env.DB);
-    await mongoose.connect(process.env.DB, {
+    await mongoose.connect("mongodb+srv://adminGUB:12345@cluster0.8kfpn.mongodb.net/events?retryWrites=true&w=majority", {
         useUnifiedTopology: true,
         useNewUrlParser: true
     });
@@ -50,7 +50,7 @@ var Event = mongoose.model("Event", eventSchema);
 
 //adminForm 
 app.get("/eventform/:username/:password", function(req, res) {
-    if (req.params.username === process.env.USER && req.params.password === process.env.PASS) {
+    if (req.params.username === "admin@GUB" && req.params.password === "12345") {
         res.render("adminForm.ejs");
     } else {
         res.redirect("/");
@@ -140,21 +140,21 @@ app.get("/eventdetail/:id", function(req, res) {
     res.redirect("/eventdetail")
 })
 app.get("/eventdetail", function(req, res) {
-    Event.findOne({
-        _id: documentId
-    }, (err, event) => {
-        if (err) {
-            console.log(err);
-        } else {
-            res.render("eventDetail.ejs", {
-                event: event
-            })
-        }
+        Event.findOne({
+            _id: documentId
+        }, (err, event) => {
+            if (err) {
+                console.log(err);
+            } else {
+                res.render("eventDetail.ejs", {
+                    event: event
+                })
+            }
+        })
     })
-})
-//all events to delete
+    //all events to delete
 app.get("/eventdelete/:username/:password", function(req, res) {
-    if (req.params.username === process.env.USER && req.params.password === process.env.PASS) {
+    if (req.params.username === "admin@GUB" && req.params.password === "12345") {
         res.redirect("/6aecd76hb972aic8561aic936wps123abc2712GUB");
     } else {
         res.redirect("/");
@@ -176,17 +176,16 @@ app.get("/6aecd76hb972aic8561aic936wps123abc2712GUB", function(req, res) {
         }
     })
 });
-app.get("/eventdelete/:id",function(req,res){
-    Event.findByIdAndDelete(req.params.id,function(err){
-        if(err){
-            console.log(err);
-        }
-        else{
-            res.redirect("/6aecd76hb972aic8561aic936wps123abc2712GUB");
-        }
+app.get("/eventdelete/:id", function(req, res) {
+        Event.findByIdAndDelete(req.params.id, function(err) {
+            if (err) {
+                console.log(err);
+            } else {
+                res.redirect("/6aecd76hb972aic8561aic936wps123abc2712GUB");
+            }
+        })
     })
-})
-//########################################################
+    //########################################################
 
 app.listen(process.env.PORT || 3000, function() {
     console.log("SERVER STARTED!!");
